@@ -85,3 +85,36 @@ html {
         background-position: 40px 40px;
     }
 }
+@keyframes enhance-header {
+    to {
+        background: #22458281;
+        backdrop-filter: blur(20px);
+        transform: translateY(10px);
+        border-radius: 50px;
+    }
+}
+.header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 10 !important;
+}
+
+.nav {
+    background: #0c1f3b;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 95%;
+    margin: 0 auto;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 150px;
+}
+.nav-item {
+    transition: all 0.2s ease;
+    &:hover {
+        transform: translateY(-5px);
+    }
+    &:active {
+        transform: scale(0.8);
+    }
+}

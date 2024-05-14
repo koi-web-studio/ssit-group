@@ -38,7 +38,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/servicios"
-                                    className="text-gray-300 text-base transition-colors hover:text-blanco"
+                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Servicios
                                 </Link>
@@ -46,7 +46,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/contacto"
-                                    className="text-gray-300 text-base transition-colors hover:text-blanco"
+                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Contacto
                                 </Link>
@@ -56,7 +56,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/productos"
-                                    className="text-gray-300 text-base transition-colors hover:text-blanco"
+                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Productos
                                 </Link>
@@ -64,7 +64,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/productos/my-assistance"
-                                    className="text-gray-300 text-base transition-colors hover:text-blanco"
+                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     MyAssistance
                                 </Link>
