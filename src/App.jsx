@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contacto from "./pages/Contacto";
+import Footer from "./components/common/Footer";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                     <Route exac path="/contacto" element={<Contacto />} />
                 </Routes>
             </main>
+            <Footer />
         </>
     );
 }

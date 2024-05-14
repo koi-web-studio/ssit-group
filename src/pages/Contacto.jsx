@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
+/* import { FaLocationDot } from "react-icons/fa6"; */
 /* import { Helmet } from "react-helmet-async"; */
 /* import { sendEmail } from "../helpers/queries"; */
 /* import Swal from "sweetalert2"; */

@@ -1,3 +1,7 @@
+html {
+    scrollbar-color: #9ba9bc69 #020617;
+    scrollbar-width: thin;
+}
 #root {
     display: flex;
     flex-direction: column;
@@ -13,7 +17,8 @@
     will-change: filter;
     transition: filter 300ms;
 }
-.logo:hover {
+.btn:hover {
+    transition: all 0.3s ease-in;
     filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
@@ -48,6 +53,9 @@
 
 .mask {
     background: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+}
+.mask-reverse {
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
 }
 
 .bg-contacto {

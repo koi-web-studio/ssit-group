@@ -13,29 +13,34 @@ function Home() {
         <>
             <section className="h-[75vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
-                    <div className="cursor-pointer rounded-full bg-white bg-opacity-10 border border-[#ffffff14] backdrop-filter-[12px] hover:bg-opacity-20 transition-colors px-3 h-7">
-                        <span className="inline-flex justify-center items-center text-xs font-medium leading-5 text-blanco">
+                    <div className="cursor-pointer btn rounded-full bg-white bg-opacity-10 border border-[#ffffff14] backdrop-filter-[12px] hover:bg-opacity-20 transition-colors px-3 h-7">
+                        <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
                             SSIT Group <FaCode className="ml-1 text-xl" />
                         </span>
                     </div>
-                    <h1 className="text-3xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
-                        <span className="text-blanco">
+                    <h1 className="text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
+                        <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
                             Consultoria informatica
                         </span>{" "}
                         <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
                             y desarrollo de software
                         </span>
                     </h1>
+                    {/* <p className="text-[#b4bcd0] min-w-[300px] max-w-[600px] text-center text-lg sm:text-xl leading-[1.3] mx-4 sm:mx-8">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Eos eum ullam exercitationem veritatis, voluptas
+                        culpa.
+                    </p> */}
                     <div className="flex justify-center items-center gap-8">
-                        <Link to="/">
-                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blanco hover:bg-blanco/60 h-10 px-4 py-2 sm:text-base">
+                        <Link to="/contacto" className="btn">
+                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blanco h-10 px-4 py-2 sm:text-base">
                                 contratanos{" "}
                                 <span className="ml-1">
                                     <HiArrowNarrowRight className="text-lg" />
                                 </span>
                             </button>
                         </Link>
-                        <Link to="/">
+                        <Link to="/" className="btn">
                             <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-blanco hover:bg-secondary/60 h-10 px-4 py-2 sm:text-base">
                                 ver servicios
                             </button>
@@ -49,7 +54,7 @@ function Home() {
                         <h2 className="text-5xl md:text-6xl mb-5 font-[450] bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
                             Que hacemos
                         </h2>
-                        <p className="mt-6 text-center text-lg sm:text-xl leading-6 text-gray-600 dark:text-gray-200 max-w-xl">
+                        <p className="mt-6 text-center text-lg sm:text-xl leading-6 text-gray-400 max-w-xl">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Aperiam quaerat harum iure. Quae, officia
                             laudantium?
