@@ -2,15 +2,15 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
     return (
         <header className="header">
-            <nav className="nav max-w-xl py-3">
-                <ul className="flex items-center justify-center px-0 my-0 gap-4 md:gap-8 mx-auto text-gray-400">
+            <nav className="nav max-w-sm py-3">
+                <ul className="flex items-center justify-center px-0 my-0 gap-4 md:gap-8 mx-auto text-slate-500">
                     <li className="nav-item">
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "hover:text-blanco font-medium border-b-[3px] border-spacing-y-0 text-blanco"
-                                    : "hover:text-blanco"
+                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    : "hover:text-slate-800"
                             }
                         >
                             Inicio
@@ -21,8 +21,8 @@ function Navbar() {
                             to="/servicios"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "hover:text-blanco font-medium border-b-[3px] border-spacing-y-0 text-blanco"
-                                    : "hover:text-blanco"
+                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    : "hover:text-slate-800"
                             }
                         >
                             Servicios
@@ -33,8 +33,8 @@ function Navbar() {
                             to="/productos"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "hover:text-blanco font-medium border-b-[3px] border-spacing-y-0 text-blanco"
-                                    : "hover:text-blanco"
+                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    : "hover:text-slate-800"
                             }
                         >
                             Productos
@@ -45,8 +45,8 @@ function Navbar() {
                             to="/contacto"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "hover:text-blanco font-medium border-b-[3px] border-spacing-y-0 text-blanco"
-                                    : "hover:text-blanco"
+                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    : "hover:text-slate-800"
                             }
                         >
                             Contacto

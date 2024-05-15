@@ -4,13 +4,13 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 function Footer() {
     return (
-        <footer className="sm:h-[200px] bg-slate-950 border-t border-gray-700">
+        <footer className="sm:h-[200px] bg-white border-t border-gray-300">
             <div className="h-full flex flex-col justify-center gap-8 lg:max-w-6xl lg:mx-auto px-4 xl:px-0">
                 <div className="p-4 sm:py-4 md:px-4 flex flex-col items-center sm:flex-row sm:justify-between gap-4 lg:px-8">
                     <div className="flex flex-col items-center sm:items-start">
                         <Link
                             to="/"
-                            className="text-xl font-medium text-gray-300 transition-colors hover:text-blanco hover:underline hover:underline-offset-2"
+                            className="text-xl font-medium text-blanco transition-colors hover:text-blanco hover:underline hover:underline-offset-2"
                         >
                             SSIT Group
                         </Link>
@@ -18,7 +18,7 @@ function Footer() {
                             <li className="text-lg transition hover:-translate-y-1">
                                 <Link
                                     to="#"
-                                    className="text-gray-300 transition-colors hover:text-blanco"
+                                    className="text-blanco transition-colors hover:text-blanco"
                                 >
                                     <FaInstagram />
                                 </Link>
@@ -26,7 +26,7 @@ function Footer() {
                             <li className="text-lg transition hover:-translate-y-1">
                                 <Link
                                     to="#"
-                                    className="text-gray-300 transition-colors hover:text-blanco"
+                                    className="text-blanco transition-colors hover:text-blanco"
                                 >
                                     <MdOutlineMailOutline />
                                 </Link>
@@ -38,7 +38,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/servicios"
-                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
+                                    className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Servicios
                                 </Link>
@@ -46,7 +46,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/contacto"
-                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
+                                    className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Contacto
                                 </Link>
@@ -56,7 +56,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/productos"
-                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
+                                    className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     Productos
                                 </Link>
@@ -64,7 +64,7 @@ function Footer() {
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
                                     to="/productos/my-assistance"
-                                    className="text-gray-300 text-base md:text-sm transition-colors hover:text-blanco"
+                                    className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     MyAssistance
                                 </Link>
@@ -74,7 +74,7 @@ function Footer() {
                 </div>
                 <div className="px-3 sm:px-5 pb-2">
                     <div className="text-center">
-                        <small className="text-gray-300 text-[0.85rem] md:text-[0.925rem]">
+                        <small className="text-blanco text-[0.85rem] md:text-[0.925rem]">
                             Desarrollado por{" "}
                             <a
                                 href="https://www.instagram.com/koiwebstudio/"

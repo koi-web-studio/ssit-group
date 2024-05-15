@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {
             colors: {
-                blanco: "#F9FAFB",
+                blanco: "#111827",
                 gris: "#9BA9BC",
                 secondary: "#262626",
             },

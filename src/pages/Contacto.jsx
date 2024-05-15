@@ -54,11 +54,11 @@ function Contacto() {
                 />
             </Helmet> */}
             <div className="my-[15%] px-3 lg:px-0 lg:flex justify-between lg:my-0 lg:py-0">
-                <div className="hidden lg:block grow w-1/2 bg-contacto">
+                <div className="hidden lg:block grow w-1/2 bg-contacto text-white">
                     sfas
                 </div>
                 <div className="flex flex-col gap-8 md:gap-10 md:items-center lg:w-1/2 lg:ms-auto lg:py-[10%]">
-                    <div className="flex flex-col justify-center items-center gap-8 sm:w-3/5 sm:mx-auto lg:w-[70%] text-center py-10 card rounded-xl md:p-10 text-blanco">
+                    <div className="flex flex-col justify-center items-center gap-8 sm:w-3/5 sm:mx-auto lg:w-[70%] text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20">
                         <h2 className="text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
                             Contacto
                         </h2>
@@ -77,7 +77,7 @@ function Contacto() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-10 py-6 px-2 sm:w-3/5 sm:mx-auto lg:w-[70%] rounded-xl md:p-10 card">
+                    <div className="flex flex-col gap-10 py-6 px-2 sm:w-3/5 sm:mx-auto lg:w-[70%] rounded-xl md:p-10 card border border-gray-500/20">
                         <div className="flex flex-col">
                             <h3 className="text-6xl text-center bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
                                 Escribinos
