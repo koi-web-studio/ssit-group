@@ -53,7 +53,7 @@ html {
 }
 
 .mask {
-    background: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background: linear-gradient(rgba(255, 255, 255, 0.651), transparent);
 }
 .mask-reverse {
     background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
@@ -106,7 +106,7 @@ html {
     /* border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px; */
     border-radius: 25px;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     backdrop-filter: blur(10px);
     /* animation: enhance-header linear both;
@@ -120,5 +120,20 @@ html {
     }
     &:active {
         transform: scale(0.8);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .info-container:has(.info:hover) .info:not(:hover) {
+        scale: 1;
+        opacity: 0.8;
+        filter: blur(5px);
+    }
+
+    .info {
+        transition: all 0.5s ease;
+        /* &:hover {
+            transform: scale(1.1);
+        } */
     }
 }

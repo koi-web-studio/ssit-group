@@ -5,7 +5,7 @@ export default {
         extend: {
             colors: {
                 blanco: "#111827",
-                gris: "#9BA9BC",
+                gris: "#617086",
                 secondary: "#262626",
             },
         },

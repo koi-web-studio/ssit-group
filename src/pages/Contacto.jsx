@@ -55,13 +55,11 @@ function Contacto() {
             </Helmet> */}
             <div className="my-[15%] px-3 lg:px-0 lg:flex justify-between lg:my-0 lg:py-0">
                 <div className="hidden lg:block grow w-1/2 bg-contacto text-white">
-                    sfas
+                    ssit group
                 </div>
                 <div className="flex flex-col gap-8 md:gap-10 md:items-center lg:w-1/2 lg:ms-auto lg:py-[10%]">
                     <div className="flex flex-col justify-center items-center gap-8 sm:w-3/5 sm:mx-auto lg:w-[70%] text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20">
-                        <h2 className="text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
-                            Contacto
-                        </h2>
+                        <h2 className="text-6xl text-blanco">Contacto</h2>
                         <div className="flex flex-col gap-8 mx-auto py-4">
                             <p className="text-xl flex items-center gap-1 self-start text-negro-200">
                                 <span>
@@ -79,10 +77,10 @@ function Contacto() {
                     </div>
                     <div className="flex flex-col gap-10 py-6 px-2 sm:w-3/5 sm:mx-auto lg:w-[70%] rounded-xl md:p-10 card border border-gray-500/20">
                         <div className="flex flex-col">
-                            <h3 className="text-6xl text-center bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
+                            <h3 className="text-6xl text-center textto-blanco">
                                 Escribinos
                             </h3>
-                            <p className="text-xl text-gray-400 my-2 text-center">
+                            <p className="text-xl text-gray-500 my-2 text-center">
                                 ¿Tienes alguna consulta? No dudes en escribirnos
                                 y te responderemos lo antes posible
                             </p>
@@ -185,7 +183,7 @@ function Contacto() {
                                     </small>
                                 )}
                             </div>
-                            <button className="text-blanco gap-4 text-xl md:text-2xl bg-slate-500/20 rounded-lg p-1 px-2 transition-colors hover:bg-slate-950">
+                            <button className="text-blanco gap-4 text-xl md:text-2xl bg-slate-500/20 rounded-lg p-1 px-2 transition-colors hover:bg-slate-700 hover:text-white">
                                 Enviar
                             </button>
                         </form>
