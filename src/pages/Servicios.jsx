@@ -1,4 +1,4 @@
-import { Lumiflex, Velustro, Opulento } from "uvcanvas";
+import { Lumiflex, Velustro, Tranquiluxe, Novatrix, Zenitho } from "uvcanvas";
 import { Link } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
@@ -16,6 +16,21 @@ function Servicios() {
             </section>
             <section>
                 <div className="flex flex-col items-stretch md:pt-32 text-blanco relative">
+                    <div className="h-[400px] relative">
+                        <div className="absolute top-0 left-0 w-full h-full">
+                            <div className="relative h-full grid place-items-center">
+                                <a
+                                    href="https://www.myassistanceapp.com"
+                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline"
+                                >
+                                    My Assistence
+                                </a>
+                            </div>
+                        </div>
+                        <div className="relative top-0 left-0 h-full -z-10">
+                            <Zenitho />
+                        </div>
+                    </div>
                     <div className="h-[400px] relative">
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="relative h-full grid place-items-center">
@@ -37,7 +52,7 @@ function Servicios() {
                             </div>
                         </div>
                         <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Opulento />
+                            <Tranquiluxe />
                         </div>
                     </div>
                     <div className="h-[400px] relative">
@@ -52,17 +67,26 @@ function Servicios() {
                             <Lumiflex />
                         </div>
                     </div>
+                    <div className="h-[400px] relative">
+                        <div className="absolute top-0 left-0 w-full h-full">
+                            <div className="relative h-full grid place-items-center">
+                                <h3 className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-600 transition hover:underline">
+                                    My Assistence
+                                </h3>
+                            </div>
+                        </div>
+                        <div className="relative top-0 left-0 w-full h-full -z-10">
+                            <Novatrix />
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section className="h-[500px] grid place-items-center">
+            <section className="h-[600px] grid place-items-center">
                 <Link
                     to="/contacto"
-                    className="text-[#40495A] text-4xl sm:text-5xl md:text-6xl lg:text-7xl transition hover:text-blanco hover:translate-x-1 inline-flex"
+                    className="border-4 border-[#40495A] p-3 px-8 rounded-full text-[#40495A] text-4xl sm:text-5xl md:text-6xl lg:text-7xl transition hover:text-blanco hover:translate-x-1 inline-flex"
                 >
-                    Contactanos{" "}
-                    <span className="mt-2">
-                        <HiArrowNarrowRight />
-                    </span>
+                    Contactanos
                 </Link>
             </section>
         </>

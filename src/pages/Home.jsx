@@ -15,7 +15,9 @@ function Home() {
                 <div className="flex flex-col items-center justify-center gap-8">
                     <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7">
                         <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
-                            SSIT Group <FaCode className="ml-1 text-xl" />
+                            SSIT
+                            <FaCode className="mx-2 text-xl" />
+                            Group
                         </span>
                     </div>
                     <h1 className="text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
@@ -29,13 +31,16 @@ function Home() {
                     <div className="flex justify-center items-center gap-8">
                         <Link to="/contacto" className="btn">
                             <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
-                                contratanos{" "}
+                                contactanos{" "}
                                 <span className="ml-1">
                                     <HiArrowNarrowRight className="text-lg" />
                                 </span>
                             </button>
                         </Link>
-                        <Link to="/servicios" className="btn">
+                        <Link
+                            to="/servicios"
+                            className="transition hover:scale-105"
+                        >
                             <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-300 border h-10 px-4 py-2 sm:text-base">
                                 ver servicios
                             </button>
@@ -166,10 +171,10 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="h-[500px] grid place-items-center">
+            <section className="h-[600px] grid place-items-center">
                 <Link
                     to="/contacto"
-                    className="text-[#40495A] text-4xl sm:text-5xl md:text-6xl lg:text-7xl transition hover:text-blanco hover:translate-x-1 inline-flex"
+                    className="border-4 border-[#40495A] p-2 px-4 rounded-full text-[#40495A] text-4xl sm:text-5xl md:text-6xl lg:text-7xl transition hover:text-blanco hover:translate-x-1 inline-flex"
                 >
                     Contactanos{" "}
                     <span className="mt-2">
