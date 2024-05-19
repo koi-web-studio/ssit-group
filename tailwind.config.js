@@ -20,6 +20,11 @@ export default {
                     },
                 },
             },
+            backgroundImage: {
+                contact: "url('/contact.svg')",
+                IA: "url('/ai.jpg')",
+                bw: "url('/bw1.jpg')",
+            },
             animation: {
                 /* (variable)  --> en el componente se colocaria "className:'translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:(valor)]'" */
                 "fade-in":

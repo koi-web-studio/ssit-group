@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-/* import { FaLocationDot } from "react-icons/fa6"; */
+import { BsTelephone } from "react-icons/bs";
+import { MdMailOutline } from "react-icons/md";
 import { Helmet } from "react-helmet-async";
+/* import { FaLocationDot } from "react-icons/fa6"; */
 /* import { sendEmail } from "../helpers/queries"; */
 /* import Swal from "sweetalert2"; */
 
@@ -54,22 +54,20 @@ function Contacto() {
                 />
             </Helmet>
             <div className="my-[15%] px-3 lg:px-0 lg:flex justify-between lg:my-0 lg:py-0">
-                <div className="hidden lg:block grow w-1/2 bg-contacto text-white">
-                    ssit group
-                </div>
-                <div className="flex flex-col gap-8 md:gap-10 md:items-center lg:w-1/2 lg:ms-auto lg:py-[10%]">
+                <div className="hidden lg:block grow w-1/2 bg-bw bg-center bg-cover text-white"></div>
+                <div className="flex flex-col gap-8 md:gap-10 md:items-center lg:w-1/2 lg:ms-auto lg:py-[2%]">
                     <div className="flex flex-col justify-center items-center gap-8 sm:w-3/5 sm:mx-auto lg:w-[70%] text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20">
                         <h2 className="text-6xl text-blanco">Contacto</h2>
                         <div className="flex flex-col gap-8 mx-auto py-4">
                             <p className="text-xl flex items-center gap-1 self-start text-negro-200">
                                 <span>
-                                    <FaPhoneAlt />
+                                    <BsTelephone />
                                 </span>{" "}
                                 54-387-4311455
                             </p>
                             <p className="text-xl flex items-center gap-1 self-start text-negro-200">
                                 <span>
-                                    <MdEmail />
+                                    <MdMailOutline />
                                 </span>{" "}
                                 info@boulevardsur.com.ar
                             </p>

@@ -4,10 +4,10 @@
 
 @layer components {
     .input {
-        @apply py-2 px-2 rounded-md border border-slate-500/20 focus:outline-none focus:border-slate-300 text-xl placeholder:text-gray-500 text-blanco bg-transparent;
+        @apply py-2 px-2 rounded-md border border-slate-500/20 focus:outline-gris/50 focus:border-slate-300 text-xl placeholder:text-gray-500 text-blanco bg-transparent;
     }
     .textarea {
-        @apply py-4 px-2 rounded-md border border-slate-500/20 focus:outline-none focus:border-slate-300 text-xl placeholder:text-gray-500 text-blanco h-[200px] bg-transparent;
+        @apply py-4 px-2 rounded-md border border-slate-500/20 focus:outline-gris/50 focus:border-slate-300 text-xl placeholder:text-gray-500 text-blanco h-[200px] bg-transparent;
     }
     .rayado {
         @apply underline decoration-dark-boulevard-blue-700;
