@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Error() {
     return (
         <>
-            <div className="mt-24 flex flex-col items-center gap-10">
+            <div className="my-24 lg:mb-0 flex flex-col items-center gap-10">
                 <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
                     <div className="flex flex-col lg:flex-row lg:pr-16 items-center lg:border-r-2 lg:border-slate-400">
                         <h1 className="text-slate-500 text-6xl sm:text-7xl md:text-8xl xl:text-9xl">

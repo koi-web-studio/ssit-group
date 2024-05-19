@@ -7,29 +7,48 @@ import { GiProgression } from "react-icons/gi";
 import { VercelLogo } from "../assets/logos/VercelLogo";
 import { CashAppLogo } from "../assets/logos/CashAppLogo";
 import { RampLogo } from "../assets/logos/RampLogo";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+AOS.init({
+    duration: 500,
+    once: true,
+    easing: "ease",
+});
 
 function Home() {
+    useEffect(() => {
+        (async () => {
+            const LocomotiveScroll = (await import("locomotive-scroll"))
+                .default;
+            const locomotiveScroll = new LocomotiveScroll();
+        })();
+    }, []);
     return (
         <>
             <section className="h-[65vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
-                    <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7">
+                    <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
                         <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
                             SSIT
                             <FaCode className="mx-2 text-xl" />
                             Group
                         </span>
                     </div>
-                    <h1 className="text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
-                        <span className="text-blanco">
+                    <h1 className="cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
+                        <span className="text-blanco translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
                             Consultoria informatica
                         </span>{" "}
-                        <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
+                        <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:250ms]">
                             y desarrollo de software
                         </span>
                     </h1>
-                    <div className="flex justify-center items-center gap-8">
-                        <Link to="/contacto" className="btn">
+                    <div className="flex justify-center items-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:300ms]">
+                        <Link
+                            to="/contacto"
+                            className="transition hover:scale-105"
+                        >
                             <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
                                 contactanos{" "}
                                 <span className="ml-1">
@@ -61,7 +80,11 @@ function Home() {
                         </p>
                     </div> */}
                     <div className="xl:w-[1200px] pb-10 lg:pb-24 flex items-center justify-center flex-wrap gap-8 info-container">
-                        <div className="info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                            className="cursor-pointer info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]"
+                        >
                             <span>
                                 <FaConnectdevelop className="text-blanco" />
                             </span>
@@ -74,7 +97,11 @@ function Home() {
                                 únicas de nuestros clientes.
                             </p>
                         </div>
-                        <div className="info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            className="cursor-pointer info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]"
+                        >
                             <span>
                                 <MdDevices className="text-blanco" />
                             </span>
@@ -87,7 +114,11 @@ function Home() {
                                 y ventajas competitivas para nuestros clientes.
                             </p>
                         </div>
-                        <div className="info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]">
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            className="cursor-pointer info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[350px]"
+                        >
                             <span>
                                 <GiProgression className="text-blanco" />
                             </span>
@@ -131,7 +162,7 @@ function Home() {
             </section>
             <section className="px-8">
                 <div className="pb-36">
-                    <h3 className="mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium md:text-5xl">
+                    <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium md:text-5xl">
                         Productos Destacados
                     </h3>
                     <div className="flex flex-wrap justify-around gap-x-6 gap-y-8 [&_svg]:max-w-[16rem] [&_svg]:basis-[calc(50%-12px)] md:basis-[calc(50%-20px)] lg:[&_svg]:basis-[calc(16.66%-20px)] lg:max-w-5xl lg:mx-auto">
@@ -174,10 +205,10 @@ function Home() {
             <section className="h-[600px] grid place-items-center">
                 <Link
                     to="/contacto"
-                    className="border-4 border-[#40495A] p-2 px-4 rounded-full text-[#40495A] text-4xl sm:text-5xl md:text-6xl lg:text-7xl transition hover:text-blanco hover:translate-x-1 inline-flex"
+                    className="border-4 border-[#40495A] p-2 px-4 rounded-full text-[#40495A] text-4xl md:text-5xl  transition hover:text-blanco hover:translate-x-1 inline-flex"
                 >
                     Contactanos{" "}
-                    <span className="mt-2">
+                    <span className="mt-1">
                         <HiArrowNarrowRight />
                     </span>
                 </Link>
