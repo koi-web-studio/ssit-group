@@ -7,6 +7,7 @@ import Footer from "./components/common/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import Error from "./pages/Error";
 import Servicios from "./pages/Servicios";
+import ScrollBtn from "./components/ui/ScrollBtn";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 </div>
             </div>
             <Navbar />
+            <ScrollBtn />
             <main className="relative grow">
                 <Routes>
                     <Route exac path="/" element={<Home />} />

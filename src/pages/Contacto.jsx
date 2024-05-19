@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 /* import { FaLocationDot } from "react-icons/fa6"; */
-/* import { Helmet } from "react-helmet-async"; */
+import { Helmet } from "react-helmet-async";
 /* import { sendEmail } from "../helpers/queries"; */
 /* import Swal from "sweetalert2"; */
 
@@ -41,8 +41,8 @@ function Contacto() {
 
     return (
         <>
-            {/* <Helmet>
-                <title>Contactanos - Boulevard Sur</title>
+            <Helmet>
+                <title>Contactanos - ssit group</title>
                 <meta
                     name="description"
                     content="¿Tienes alguna consulta? No dudes en escribirnos
@@ -50,9 +50,9 @@ function Contacto() {
                 />
                 <link
                     rel="canonical"
-                    href="https://boulevard-sur.vercel.app/contacto"
+                    href="https://ssit-group.vercel.app/contacto"
                 />
-            </Helmet> */}
+            </Helmet>
             <div className="my-[15%] px-3 lg:px-0 lg:flex justify-between lg:my-0 lg:py-0">
                 <div className="hidden lg:block grow w-1/2 bg-contacto text-white">
                     ssit group

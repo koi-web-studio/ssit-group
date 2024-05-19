@@ -46,7 +46,7 @@ function Navbar() {
                             className={({ isActive }) =>
                                 isActive
                                     ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
-                                    : "hover:text-slate-800"
+                                    : "bg-slate-500 text-white p-2 rounded-3xl transition-colors hover:bg-slate-500/50"
                             }
                         >
                             Contacto

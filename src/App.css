@@ -94,6 +94,17 @@ html {
         border-radius: 50px;
     }
 }
+@keyframes opacity-scroll {
+    to {
+        opacity: 1;
+    }
+}
+.scroll-btn {
+    opacity: 0;
+    animation: opacity-scroll linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+}
 .header {
     position: sticky !important;
     top: 0 !important;
@@ -123,6 +134,12 @@ html {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .nav-item {
+        font-size: 14px;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .info-container:has(.info:hover) .info:not(:hover) {
         scale: 1;
@@ -132,8 +149,5 @@ html {
 
     .info {
         transition: all 0.5s ease;
-        /* &:hover {
-            transform: scale(1.1);
-        } */
     }
 }

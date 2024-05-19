@@ -10,6 +10,8 @@ import { RampLogo } from "../assets/logos/RampLogo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import ContactBtn from "../components/ui/ContactBtn";
 
 AOS.init({
     duration: 500,
@@ -27,6 +29,11 @@ function Home() {
     }, []);
     return (
         <>
+            <Helmet>
+                <title>Inicio - ssit group</title>
+                <link rel="canonical" href="https://ssit-group.vercel.app" />
+                <meta name="description" content="SSIT GROUP" />
+            </Helmet>
             <section className="h-[65vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
                     <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
@@ -203,15 +210,7 @@ function Home() {
                 </div>
             </section>
             <section className="h-[600px] grid place-items-center">
-                <Link
-                    to="/contacto"
-                    className="border-4 border-[#40495A] p-2 px-4 rounded-full text-[#40495A] text-4xl md:text-5xl  transition hover:text-blanco hover:translate-x-1 inline-flex"
-                >
-                    Contactanos{" "}
-                    <span className="mt-1">
-                        <HiArrowNarrowRight />
-                    </span>
-                </Link>
+                <ContactBtn />
             </section>
         </>
     );
