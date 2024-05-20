@@ -6,6 +6,7 @@ import { FaCode } from "react-icons/fa6";
 import { GiProgression } from "react-icons/gi";
 import { VercelLogo } from "../assets/logos/VercelLogo";
 import { CashAppLogo } from "../assets/logos/CashAppLogo";
+import MaLogo from "../assets/logos/MaLogo";
 import { RampLogo } from "../assets/logos/RampLogo";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -76,16 +77,6 @@ function Home() {
             </section>
             <section className="px-4">
                 <div className="flex flex-col items-center sm:px-2 md:py-32 gap-8 text-blanco">
-                    {/* <div className="text-center">
-                        <h2 className="text-5xl md:text-6xl mb-5 font-[450] bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text">
-                            Que hacemos
-                        </h2>
-                        <p className="mt-6 text-center text-lg sm:text-xl leading-6 text-gray-500 max-w-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aperiam quaerat harum iure. Quae, officia
-                            laudantium?
-                        </p>
-                    </div> */}
                     <div className="xl:w-[1200px] pb-10 lg:pb-24 flex items-center justify-center flex-wrap gap-8 info-container">
                         <div
                             data-aos="fade-up"
@@ -138,65 +129,25 @@ function Home() {
                                 y contribuyen al éxito empresarial.
                             </p>
                         </div>
-                        {/* <div className="rounded-lg flex flex-col items-center justify-center p-2 py-3 text-4xl text-white  card border-b-4 border-gray-500">
-                            <span>
-                                <MdDevices />
-                            </span>
-                            <h3 className="text-xl text-center mt-5 font-semibold">
-                                Inversión en el Éxito
-                            </h3>
-                            <p className="text-center text-lg m-4 text-neutral-400">
-                                Consideramos nuestras soluciones como
-                                inversiones estratégicas que generan beneficios
-                                y ventajas competitivas para nuestros clientes.
-                            </p>
-                        </div>
-                        <div className="rounded-lg flex flex-col items-center justify-center p-2 py-3 text-4xl text-white  bg-neutral-300/10 backdrop-blur-xl border-b-4 border-gray-500">
-                            <span>
-                                <GiProgression />
-                            </span>
-                            <h3 className="text-xl text-center mt-5 font-semibold">
-                                Posicionamiento en el Mercado
-                            </h3>
-                            <p className="text-center text-lg m-4 text-neutral-400">
-                                Ayudamos a nuestros clientes a destacarse en su
-                                mercado, ofreciendo soluciones que agregan valor
-                                y contribuyen al éxito empresarial.
-                            </p>
-                        </div> */}
                     </div>
                 </div>
             </section>
             <section className="px-8">
-                <div className="pb-36">
+                <div className="py-12 pb-18 md:pb-48">
                     <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium md:text-5xl">
                         Productos Destacados
                     </h3>
-                    <div className="flex flex-wrap justify-around gap-x-6 gap-y-8 [&_svg]:max-w-[16rem] [&_svg]:basis-[calc(50%-12px)] md:basis-[calc(50%-20px)] lg:[&_svg]:basis-[calc(16.66%-20px)] lg:max-w-5xl lg:mx-auto">
-                        <VercelLogo color="#40495A" />
-                        <CashAppLogo color="#40495A" />
-                        <RampLogo color="#40495A" />
-                        <VercelLogo color="#40495A" />
-                        <CashAppLogo color="#40495A" />
-                        <RampLogo color="#40495A" />
-                        <VercelLogo
-                            color="#40495A"
-                            className="hidden lg:block"
-                        />
-                        <CashAppLogo
-                            color="#40495A"
-                            className="hidden lg:block"
-                        />
-                        <RampLogo color="#40495A" className="hidden lg:block" />
-                        <VercelLogo
-                            color="#40495A"
-                            className="hidden lg:block"
-                        />
-                        <CashAppLogo
-                            color="#40495A"
-                            className="hidden lg:block"
-                        />
-                        <RampLogo color="#40495A" className="hidden lg:block" />
+                    <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
+                        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-around">
+                            <MaLogo />
+                            <MaLogo />
+                            <MaLogo />
+                        </div>
+                        <div className="hidden md:flex flex-col items-center gap-8 md:flex-row md:justify-around">
+                            <MaLogo />
+                            <MaLogo />
+                            <MaLogo />
+                        </div>
                     </div>
                 </div>
             </section>

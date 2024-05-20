@@ -79,7 +79,7 @@ function Servicios() {
                             <div className="relative h-full grid place-items-center">
                                 <a
                                     href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline"
+                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-400 transition hover:underline"
                                 >
                                     My Assistence
                                 </a>
@@ -94,7 +94,7 @@ function Servicios() {
                             <div className="relative h-full grid place-items-center">
                                 <a
                                     href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline"
+                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-600 transition hover:underline"
                                 >
                                     My Assistence
                                 </a>

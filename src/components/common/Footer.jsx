@@ -62,12 +62,12 @@ function Footer() {
                                 </Link>
                             </li>
                             <li className="transition-all hover:-translate-y-1">
-                                <Link
-                                    to="/productos/my-assistance"
+                                <a
+                                    href="https://www.myassistanceapp.com"
                                     className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
                                     MyAssistance
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                     </div>
