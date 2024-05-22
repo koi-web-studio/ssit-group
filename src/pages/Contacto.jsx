@@ -2,9 +2,8 @@ import { useForm } from "react-hook-form";
 import { BsTelephone } from "react-icons/bs";
 import { MdMailOutline } from "react-icons/md";
 import { Helmet } from "react-helmet-async";
-/* import { FaLocationDot } from "react-icons/fa6"; */
-/* import { sendEmail } from "../helpers/queries"; */
-/* import Swal from "sweetalert2"; */
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 function Contacto() {
     const {
@@ -14,28 +13,35 @@ function Contacto() {
         reset,
     } = useForm();
 
-    async function onsubmit(data) {
+    function onsubmit(data) {
         console.log(data);
-        /* const res = await sendEmail(data); */
-        /* if (!res.ok) {
-            Swal.fire({
-                title: "Error!",
-                text: "El mensaje no pudo ser enviado",
-                icon: "error",
-                background: "#ef4444",
-                iconColor: "#d1d1d1",
-                color: "#d1d1d1",
-                confirmButtonColor: "transparent",
-            });
-        }
-        Swal.fire({
-            title: "Mensaje enviado!",
-            icon: "success",
-            background: "#1c1d4a",
-            iconColor: "#d1d1d1",
-            color: "#d1d1d1",
-            confirmButtonColor: "transparent",
-        }); */
+        emailjs
+            .send("service_q887ejk", "template_vzo7wgl", data, {
+                publicKey: "Yz8CCMEDm14YLrtxH",
+            })
+            .then(
+                () => {
+                    Swal.fire({
+                        title: "Mensaje enviado!",
+                        icon: "success",
+                        background: "#1c1d4a",
+                        iconColor: "#d1d1d1",
+                        color: "#d1d1d1",
+                        confirmButtonColor: "transparent",
+                    });
+                },
+                (error) => {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "El mensaje no pudo ser enviado",
+                        icon: "error",
+                        background: "#ef4444",
+                        iconColor: "#d1d1d1",
+                        color: "#d1d1d1",
+                        confirmButtonColor: "transparent",
+                    });
+                }
+            );
         reset();
     }
 
