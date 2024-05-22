@@ -4,10 +4,7 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { MdDevices } from "react-icons/md";
 import { FaCode } from "react-icons/fa6";
 import { GiProgression } from "react-icons/gi";
-import { VercelLogo } from "../assets/logos/VercelLogo";
-import { CashAppLogo } from "../assets/logos/CashAppLogo";
 import MaLogo from "../assets/logos/MaLogo";
-import { RampLogo } from "../assets/logos/RampLogo";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -138,15 +135,15 @@ function Home() {
                         Productos Destacados
                     </h3>
                     <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
-                        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-around">
-                            <MaLogo />
-                            <MaLogo />
-                            <MaLogo />
+                        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
+                            <MaLogo color="40495A" />
+                            <MaLogo color="40495A" />
+                            <MaLogo color="40495A" />
                         </div>
-                        <div className="hidden md:flex flex-col items-center gap-8 md:flex-row md:justify-around">
-                            <MaLogo />
-                            <MaLogo />
-                            <MaLogo />
+                        <div className="hidden md:flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
+                            <MaLogo color="40495A" />
+                            <MaLogo color="40495A" />
+                            <MaLogo color="40495A" />
                         </div>
                     </div>
                 </div>

@@ -41,12 +41,6 @@ html {
 }
 
 .card {
-    /* background: linear-gradient(#02061785 0%, rgba(255, 255, 255, 0.08) 100%); */
-    /* background-color: rgba(255, 255, 255, 0.074); */
-    /* background: linear-gradient(
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 0.08) 100%
-    ); */
     background-color: #ffffff7a;
     -webkit-backdrop-filter: blur(30px);
     backdrop-filter: blur(30px);
@@ -112,15 +106,10 @@ html {
 
 .nav {
     background: rgba(120, 120, 120, 0.2);
-    /* border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px; */
     border-radius: 25px;
     width: 100%;
     margin: 0 auto;
     backdrop-filter: blur(10px);
-    /* animation: enhance-header linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 150px; */
 }
 .nav-item {
     transition: all 0.2s ease;

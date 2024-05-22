@@ -1,8 +1,9 @@
-import { Lumiflex, Velustro, Tranquiluxe, Novatrix, Zenitho } from "uvcanvas";
+import { Lumiflex, Tranquiluxe, Novatrix } from "uvcanvas";
 import ContactBtn from "../components/ui/ContactBtn";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet-async";
+import MaLogo from "../assets/logos/MaLogo";
 
 AOS.init({
     duration: 500,
@@ -32,33 +33,6 @@ function Servicios() {
             </section>
             <section>
                 <div className="flex flex-col items-stretch md:pt-32 text-blanco relative">
-                    {/* <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <a
-                                    href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline"
-                                >
-                                    My Assistence
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 h-full -z-10">
-                            <Zenitho />
-                        </div>
-                    </div> */}
-                    {/* <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <h3 className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline">
-                                    My Assistence
-                                </h3>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Velustro />
-                        </div>
-                    </div> */}
                     <div className="h-[400px] relative">
                         <div className="absolute top-0 left-0 w-full h-full">
                             <div className="relative h-full grid place-items-center">
