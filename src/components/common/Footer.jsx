@@ -55,10 +55,10 @@ function Footer() {
                         <ul className="flex flex-col items-center gap-3">
                             <li className="transition-all hover:-translate-y-1">
                                 <Link
-                                    to="/productos"
+                                    to="/proyectos"
                                     className="text-blanco text-base md:text-sm transition-colors hover:text-blanco"
                                 >
-                                    Productos
+                                    Proyectos
                                 </Link>
                             </li>
                             <li className="transition-all hover:-translate-y-1">
@@ -82,7 +82,7 @@ function Footer() {
                                 rel="noopener noreferrer"
                                 className="text-blue-500 btn underline transition-colors hover:text-blue-300"
                             >
-                                Koi Web Studio
+                                Koi Digital Studio
                             </a>{" "}
                             | © 2024
                         </small>

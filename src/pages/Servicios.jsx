@@ -1,4 +1,3 @@
-import { Lumiflex, Tranquiluxe, Novatrix } from "uvcanvas";
 import ContactBtn from "../components/ui/ContactBtn";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,53 +29,35 @@ function Servicios() {
                     </h1>
                 </div>
             </section>
-            <section>
-                <div className="flex flex-col items-stretch md:pt-32 text-blanco relative">
-                    <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <a
-                                    href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-white transition hover:underline"
-                                >
-                                    My Assistence
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Tranquiluxe />
-                        </div>
-                    </div>
-                    <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <a
-                                    href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-400 transition hover:underline"
-                                >
-                                    My Assistence
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Lumiflex />
-                        </div>
-                    </div>
-                    <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <a
-                                    href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-600 transition hover:underline"
-                                >
-                                    My Assistence
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Novatrix />
-                        </div>
-                    </div>
+            <section
+                className="h-screen grid place-items-center bg-pink-600/40"
+                id="consultoria_it"
+            >
+                <div>
+                    <h2 className="text-2xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-white">
+                        Consultoria IT
+                    </h2>
+                </div>
+            </section>
+            <section
+                className="h-screen grid place-items-center bg-blue-600/40"
+                id="desarrollo_de_software"
+            >
+                <div>
+                    <h2 className="text-2xl md:text-5xl lg:text-6xl xl:text-8xl font-bold text-white">
+                        Desarrollo de Software
+                    </h2>
+                </div>
+            </section>
+            <section
+                className="h-screen grid place-items-center relative"
+                id="diseño_y_desarrollo_web"
+            >
+                <div className="absolute top-0 left-0 h-full w-full -z-10 bg-center bg-cover bg-koi blur-effect"></div>
+                <div>
+                    <h2 className="text-2xl md:text-5xl lg:text-6xl xl:text-8xl text-rose-800 font-bold">
+                        Diseño y Desarrollo web
+                    </h2>
                 </div>
             </section>
             <section className="h-[600px] grid place-items-center">

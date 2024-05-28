@@ -158,32 +158,38 @@ function Home() {
                 </div>
                 <div className="mt-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                            Consultoria IT{" "}
-                            <span className="hidden sm:block">
-                                <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                            </span>
-                        </h2>
+                        <Link to="/servicios#consultoria_it">
+                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
+                                Consultoria IT{" "}
+                                <span className="hidden sm:block">
+                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
+                                </span>
+                            </h2>
+                        </Link>
                     </div>
                 </div>
                 <div className="mt-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                            Desarrollo de Software{" "}
-                            <span className="hidden sm:block">
-                                <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                            </span>
-                        </h2>
+                        <Link to="/servicios#desarrollo_de_software">
+                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
+                                Desarrollo de Software{" "}
+                                <span className="hidden sm:block">
+                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
+                                </span>
+                            </h2>
+                        </Link>
                     </div>
                 </div>
                 <div className="my-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                            Diseño y Desarrollo web{" "}
-                            <span className="hidden sm:block">
-                                <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                            </span>
-                        </h2>
+                        <Link to="/servicios#diseño_y_desarrollo_web">
+                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
+                                Diseño y Desarrollo web{" "}
+                                <span className="hidden sm:block">
+                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
+                                </span>
+                            </h2>
+                        </Link>
                     </div>
                 </div>
                 <div className="absolute bottom-0 right-0 sm:right-8">

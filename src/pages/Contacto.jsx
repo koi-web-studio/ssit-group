@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import people from "../assets/puple.svg";
 
 function Contacto() {
     const [message, setMessage] = useState("Enviar");
@@ -69,7 +70,7 @@ function Contacto() {
             </Helmet>
             <div className="p-3 py-8 md:py-6 grid place-items-center">
                 <div className="flex flex-col gap-8 lg:flex-row lg:max-w-5xl lg:mx-auto">
-                    <div className="flex flex-col justify-center items-center gap-8 sm:w-[70%] sm:mx-auto text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20 selection:bg-slate-500/50 selection:text-white cursor-default">
+                    <div className="flex flex-col justify-center items-center gap-8 sm:w-[70%] sm:mx-auto text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20 selection:bg-slate-500/50 selection:text-white cursor-default lg:justify-between">
                         <h2 className="text-6xl text-blanco">Contacto</h2>
                         <div className="flex flex-col gap-8 mx-auto py-4">
                             <p className="text-xl flex items-center gap-1 self-start text-negro-200">
@@ -84,6 +85,16 @@ function Contacto() {
                                 </span>{" "}
                                 info@seissigmagroup.com.ar
                             </p>
+                        </div>
+                        <div className="relative self-stretch mx-auto">
+                            <img
+                                src={people}
+                                alt="logo ssit"
+                                className="w-[250px]"
+                            />
+                            <h2 className="absolute bottom-8 left-4 text-lg text-blanco font-semibold">
+                                SSIT Group
+                            </h2>
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 py-6 px-4 sm:w-[70%] sm:mx-auto rounded-xl md:p-10 card border border-gray-500/20">
