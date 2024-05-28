@@ -18,9 +18,14 @@ function Contacto() {
     function onsubmit(data) {
         setMessage("Enviando...");
         emailjs
-            .send("service_q887ejk", "template_vzo7wgl", data, {
-                publicKey: "Yz8CCMEDm14YLrtxH",
-            })
+            .send(
+                import.meta.VITE_SERVICE_ID,
+                import.meta.VITE_TEMPLATE_ID,
+                data,
+                {
+                    publicKey: import.meta.VITE_PUBLIC_KEY,
+                }
+            )
             .then(
                 () => {
                     Swal.fire({

@@ -30,14 +30,14 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="/productos"
+                            to="/proyectos"
                             className={({ isActive }) =>
                                 isActive
                                     ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
                                     : "hover:text-slate-800"
                             }
                         >
-                            Productos
+                            Proyectos
                         </NavLink>
                     </li>
                     <li className="nav-item">
