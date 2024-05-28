@@ -10,14 +10,14 @@ AOS.init({
     easing: "ease",
 });
 
-function Servicios() {
+function Proyectos() {
     return (
         <>
             <Helmet>
-                <title>Servicios - ssit group</title>
+                <title>Proyectos - ssit group</title>
                 <link
                     rel="canonical"
-                    href="https://ssit-group.vercel.app/servicios"
+                    href="https://ssit-group.vercel.app/proyectos"
                 />
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
@@ -25,7 +25,7 @@ function Servicios() {
                 <div className="flex flex-col items-center justify-center gap-8">
                     <h1 className="translate-y-[-1rem] animate-fade-in opacity-0 cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
                         <span className="text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
-                            Nuestros Servicios
+                            Nuestros Proyectos
                         </span>
                     </h1>
                 </div>
@@ -86,4 +86,4 @@ function Servicios() {
     );
 }
 
-export default Servicios;
+export default Proyectos;

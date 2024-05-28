@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Error from "./pages/Error";
 import Servicios from "./pages/Servicios";
 import ScrollBtn from "./components/ui/ScrollBtn";
+import Proyectos from "./pages/Proyectos";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route exac path="/" element={<Home />} />
                     <Route exac path="/contacto" element={<Contacto />} />
                     <Route exac path="/servicios" element={<Servicios />} />
+                    <Route exac path="/proyectos" element={<Proyectos />} />
                     <Route path="/*" element={<Error />} />
                 </Routes>
             </main>
