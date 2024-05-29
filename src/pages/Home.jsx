@@ -164,7 +164,10 @@ function Home() {
                             </h2>
                         </div>
                         <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8">
-                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                            <div
+                                data-aos="fade-left"
+                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                            >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <TbExternalLink className="text-xl" />
                                 </div>
@@ -179,7 +182,11 @@ function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                            <div
+                                data-aos="fade-up"
+                                data-delay="200"
+                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                            >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <TbExternalLink className="text-xl" />
                                 </div>
@@ -194,7 +201,11 @@ function Home() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                            <div
+                                data-aos="fade-right"
+                                data-delay="300"
+                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                            >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <TbExternalLink className="text-xl" />
                                 </div>

@@ -1,8 +1,16 @@
 import { NavLink } from "react-router-dom";
+import AOS from "aos";
+
+AOS.init({
+    duration: 500,
+    once: true,
+    easing: "ease",
+});
+
 function Navbar() {
     return (
         <header className="header">
-            <nav className="nav max-w-sm py-3">
+            <nav data-aos="fade-down" className="nav max-w-sm py-3">
                 <ul className="flex items-center justify-center px-0 my-0 gap-4 md:gap-8 mx-auto text-slate-500">
                     <li className="nav-item">
                         <NavLink
