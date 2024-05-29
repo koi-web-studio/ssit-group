@@ -132,7 +132,7 @@ function Home() {
             </section>
             <section className="px-4 md:py-12">
                 <div className="rounded-t-2xl mask grid place-content-center py-36 md:pb-48 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium md:text-5xl">
+                    <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium sm:text-5xl md:text-6xl lg:text-7xl">
                         Productos Destacados
                     </h3>
                     <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
@@ -156,40 +156,60 @@ function Home() {
                         <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                     </div>
                 </div>
-                <div className="mt-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <Link to="/servicios#consultoria_it">
-                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                                Consultoria IT{" "}
-                                <span className="hidden sm:block">
-                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                                </span>
+                <div className="min-h-[500px] grid place-items-center">
+                    <div className="py-16">
+                        <div className="mb-16">
+                            <h2 className="text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
+                                <Link to="/servicios">Servicios</Link>
                             </h2>
-                        </Link>
-                    </div>
-                </div>
-                <div className="mt-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <Link to="/servicios#desarrollo_de_software">
-                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                                Desarrollo de Software{" "}
-                                <span className="hidden sm:block">
-                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                                </span>
-                            </h2>
-                        </Link>
-                    </div>
-                </div>
-                <div className="my-12 rounded-t-2xl grid place-content-center lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="cursor-pointer h-[300px] sm:h-[350px] md:h-[400px] flex flex-col items-center justify-center gap-8">
-                        <Link to="/servicios#diseño_y_desarrollo_web">
-                            <h2 className="transition hover:scale-[1.03] text-3xl text-center font-medium md:text-6xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text inline-flex items-end">
-                                Diseño y Desarrollo web{" "}
-                                <span className="hidden sm:block">
-                                    <TbExternalLink className="ml-4 text-gris text-xl md:text-[32px]" />
-                                </span>
-                            </h2>
-                        </Link>
+                        </div>
+                        <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8">
+                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                    <TbExternalLink className="text-xl" />
+                                </div>
+                                <div className="flex flex-col gap-4">
+                                    <h3 className="text-xl font-semibold text-slate-700">
+                                        Consultoria IT
+                                    </h3>
+                                    <p className="text-md text-gris">
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Quo temporibus fugit
+                                        et magnam commodi est!
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                    <TbExternalLink className="text-xl" />
+                                </div>
+                                <div className="flex flex-col gap-4">
+                                    <h3 className="text-xl font-semibold text-slate-700">
+                                        Desarrollo de Software
+                                    </h3>
+                                    <p className="text-md text-gris">
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Quo temporibus fugit
+                                        et magnam commodi est!
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white">
+                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                    <TbExternalLink className="text-xl" />
+                                </div>
+                                <div className="flex flex-col gap-4">
+                                    <h3 className="text-xl font-semibold text-slate-700">
+                                        Diseño y Desarrollo web
+                                    </h3>
+                                    <p className="text-md text-gris">
+                                        Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Quo temporibus fugit
+                                        et magnam commodi est!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="absolute bottom-0 right-0 sm:right-8">

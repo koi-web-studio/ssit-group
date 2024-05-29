@@ -25,7 +25,7 @@ export default {
                 IA: "url('/ai.jpg')",
                 bw: "url('/bw1.jpg')",
                 koi2: "url('/koi2.jpg')",
-                koi: "url('/logo-koi.png')",
+                koi: "url('/logo-koi.webp')",
             },
             animation: {
                 /* (variable)  --> en el componente se colocaria "className:'translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:(valor)]'" */
