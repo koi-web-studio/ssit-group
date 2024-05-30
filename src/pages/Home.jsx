@@ -4,12 +4,14 @@ import { FaConnectdevelop } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import { GiProgression } from "react-icons/gi";
 import MaLogo from "../assets/logos/MaLogo";
-import { TbExternalLink } from "react-icons/tb";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import ContactBtn from "../components/ui/ContactBtn";
+import { CiGlobe } from "react-icons/ci";
+import { FaLaptopCode } from "react-icons/fa";
+import { TbUserCode } from "react-icons/tb";
 
 AOS.init({
     duration: 500,
@@ -110,23 +112,6 @@ function Home() {
                                 personalizadas para cada cliente.
                             </p>
                         </div>
-                        {/* <div
-                            data-aos="fade-up"
-                            data-aos-delay="400"
-                            className="cursor-pointer info rounded-[48px] flex flex-col items-center justify-center px-8 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
-                        >
-                            <span>
-                                <GiProgression className="text-blanco" />
-                            </span>
-                            <h3 className="text-xl md:text-2xl text-slate-600 text-center mt-5 font-medium">
-                                Posicionamiento en el Mercado
-                            </h3>
-                            <p className="text-center text-base sm:text-lg my-4 text-neutral-400">
-                                Ayudamos a nuestros clientes a destacarse en su
-                                mercado, ofreciendo soluciones que agregan valor
-                                y contribuyen al éxito empresarial.
-                            </p>
-                        </div> */}
                     </div>
                 </div>
             </section>
@@ -159,8 +144,8 @@ function Home() {
                 <div className="min-h-[500px] grid place-items-center">
                     <div className="py-16">
                         <div className="mb-16">
-                            <h2 className="text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
-                                <Link to="/servicios">Servicios</Link>
+                            <h2 className="cursor-default text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
+                                Servicios
                             </h2>
                         </div>
                         <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8">
@@ -169,16 +154,18 @@ function Home() {
                                 className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <TbExternalLink className="text-xl" />
+                                    <TbUserCode className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-xl font-semibold text-slate-700">
                                         Consultoria IT
                                     </h3>
                                     <p className="text-md text-gris">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Quo temporibus fugit
-                                        et magnam commodi est!
+                                        Servicios en tiempo real para optimizar
+                                        recursos tecnológicos, logrando
+                                        liderazgo en el mercado de TI con
+                                        soluciones alineadas a los objetivos
+                                        organizacionales.
                                     </p>
                                 </div>
                             </div>
@@ -188,16 +175,18 @@ function Home() {
                                 className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <TbExternalLink className="text-xl" />
+                                    <FaLaptopCode className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-xl font-semibold text-slate-700">
                                         Desarrollo de Software
                                     </h3>
                                     <p className="text-md text-gris">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Quo temporibus fugit
-                                        et magnam commodi est!
+                                        Proyectos de alta calidad, in situ y
+                                        remotos, utilizando herramientas de
+                                        vanguardia, metodologías ágiles y
+                                        estándares de última generación para un
+                                        desarrollo exitoso.
                                     </p>
                                 </div>
                             </div>
@@ -207,16 +196,17 @@ function Home() {
                                 className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <TbExternalLink className="text-xl" />
+                                    <CiGlobe className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-xl font-semibold text-slate-700">
                                         Diseño y Desarrollo web
                                     </h3>
                                     <p className="text-md text-gris">
-                                        Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Quo temporibus fugit
-                                        et magnam commodi est!
+                                        Soluciones personalizadas para empresas,
+                                        mejorando tu imagen y alcanzando tus
+                                        objetivos con creatividad, eficiencia y
+                                        responsabilidad.
                                     </p>
                                 </div>
                             </div>
