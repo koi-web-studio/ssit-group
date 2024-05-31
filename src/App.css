@@ -128,11 +128,11 @@ html {
 }
 
 @media screen and (min-width: 600px) {
-    .info-container:has(.info:hover) .info:not(:hover) {
+    /* .info-container:has(.info:hover) .info:not(:hover) {
         scale: 1;
         opacity: 0.8;
         filter: blur(5px);
-    }
+    } */
 
     .info {
         transition: all 0.5s ease;

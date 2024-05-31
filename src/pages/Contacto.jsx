@@ -92,9 +92,6 @@ function Contacto() {
                                 alt="logo ssit"
                                 className="w-[250px]"
                             />
-                            {/* <h2 className="absolute bottom-8 left-4 text-lg text-blanco font-semibold">
-                                SSIT Group
-                            </h2> */}
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 py-6 px-4 sm:w-[70%] sm:mx-auto rounded-xl md:p-10 card border border-gray-500/20">

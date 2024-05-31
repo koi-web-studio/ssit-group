@@ -34,7 +34,7 @@ function Home() {
                 <link rel="canonical" href="https://ssit-group.vercel.app" />
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
-            <section className="h-[65vh] px-4 grid place-items-center">
+            <section className="h-[75vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
                     <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
                         <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
@@ -75,12 +75,12 @@ function Home() {
                 </div>
             </section>
             <section className="px-4">
-                <div className="flex flex-col items-center py-12 md:py-32 gap-8 text-blanco">
+                <div className="flex flex-col items-center pb-12 md:pb-32 gap-8 text-blanco">
                     <div className="lg:max-w-5xl lg:mx-auto xl:w-[1000px] flex items-center justify-center flex-wrap gap-8 info-container">
                         <div
                             data-aos="fade-up"
                             data-aos-delay="200"
-                            className="cursor-pointer info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
                         >
                             <span>
                                 <FaConnectdevelop className="text-slate-700" />
@@ -97,7 +97,7 @@ function Home() {
                         <div
                             data-aos="fade-up"
                             data-aos-delay="300"
-                            className="cursor-pointer info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
                         >
                             <span>
                                 <GiProgression className="text-slate-700" />
@@ -117,8 +117,8 @@ function Home() {
             </section>
             <section className="px-4 md:py-12">
                 <div className="rounded-t-2xl mask grid place-content-center py-36 md:pb-48 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium sm:text-5xl md:text-6xl lg:text-7xl">
-                        Productos Destacados
+                    <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium sm:text-5xl md:text-6xl">
+                        Nuestro Desarrollo <br /> de Sistemas
                     </h3>
                     <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
                         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
@@ -126,7 +126,7 @@ function Home() {
                             <MaLogo color="40495A" />
                             <MaLogo color="40495A" />
                         </div>
-                        <div className="hidden md:flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
+                        <div className="hidden flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
                             <MaLogo color="40495A" />
                             <MaLogo color="40495A" />
                             <MaLogo color="40495A" />
@@ -136,7 +136,7 @@ function Home() {
             </section>
             <section className="p-4 bg-[#ffffffa6] border-y border-gray-500/40 relative">
                 <div className="absolute top-0 left-0 sm:left-8">
-                    <div className="flex -mb-px h-[2px] w-80 -scale-x-100">
+                    <div className="flex -mb-px h-[2px] w-72 md:w-80 -scale-x-100">
                         <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                         <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                     </div>
@@ -144,7 +144,7 @@ function Home() {
                 <div className="min-h-[500px] grid place-items-center">
                     <div className="py-16">
                         <div className="mb-16">
-                            <h2 className="cursor-default text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-700 to-pink-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
+                            <h2 className="cursor-default text-center bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold">
                                 Servicios
                             </h2>
                         </div>
@@ -214,14 +214,19 @@ function Home() {
                     </div>
                 </div>
                 <div className="absolute bottom-0 right-0 sm:right-8">
-                    <div className="flex -mb-px h-[2px] w-80 -scale-x-100">
+                    <div className="flex -mb-px h-[2px] w-72 md:w-80 -scale-x-100">
                         <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                         <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                     </div>
                 </div>
             </section>
-            <section className="h-[600px] grid place-items-center">
-                <ContactBtn />
+            <section className="h-[300px] grid place-items-center">
+                <div className="flex flex-col gap-12 items-center">
+                    <h3 className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold text-blanco">
+                        Si tenes alguna duda
+                    </h3>
+                    <ContactBtn />
+                </div>
             </section>
         </>
     );
