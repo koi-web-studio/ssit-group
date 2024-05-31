@@ -136,7 +136,7 @@ function Home() {
             </section>
             <section className="p-4 bg-[#ffffffa6] border-y border-gray-500/40 relative">
                 <div className="absolute top-0 left-0 sm:left-8">
-                    <div className="flex -mb-px h-[2px] w-80 -scale-x-100">
+                    <div className="flex -mb-px h-[2px] w-72 -scale-x-100">
                         <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                         <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                     </div>
@@ -214,7 +214,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="absolute bottom-0 right-0 sm:right-8">
-                    <div className="flex -mb-px h-[2px] w-80 -scale-x-100">
+                    <div className="flex -mb-px h-[2px] w-72 -scale-x-100">
                         <div className="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                         <div className="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"></div>
                     </div>
