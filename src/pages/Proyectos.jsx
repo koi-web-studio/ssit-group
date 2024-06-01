@@ -21,7 +21,7 @@ function Proyectos() {
                 />
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
-            <section className="h-[75vh] px-4 grid place-items-center">
+            <section className="h-[50vh] md:h-[75vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
                     <h1 className="translate-y-[-1rem] animate-fade-in opacity-0 cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
                         <span className="text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
@@ -123,26 +123,7 @@ function Proyectos() {
                     </div>
                 </div>
             </section>
-            {/* <section>
-                <div className="flex flex-col items-stretch md:pt-32 text-blanco relative">
-                    <div className="h-[400px] relative">
-                        <div className="absolute top-0 left-0 w-full h-full">
-                            <div className="relative h-full grid place-items-center">
-                                <a
-                                    href="https://www.myassistanceapp.com"
-                                    className="cursor-pointer text-3xl md:text-5xl font-medium text-slate-400 transition hover:underline"
-                                >
-                                    My Assistence
-                                </a>
-                            </div>
-                        </div>
-                        <div className="relative top-0 left-0 w-full h-full -z-10">
-                            <Lumiflex />
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-            <section className="px-4 py-12 md:py-36">
+            <section className="px-2 sm:px-4 py-12 md:py-36">
                 <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
                     <div className="absolute bg-slate-950 h-full w-full -z-10 rounded-2xl">
                         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>

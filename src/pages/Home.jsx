@@ -133,7 +133,7 @@ function Home() {
                                         className="rounded-lg grayscale"
                                     />
                                     <h4 className="font-bold text-[#40495A] text-2xl">
-                                        Foreven
+                                        Forevent
                                     </h4>
                                 </div>
                             </a>

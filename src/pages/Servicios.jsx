@@ -50,7 +50,7 @@ function Servicios() {
                 />
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
-            <section className="h-[75vh] px-4 grid place-items-center">
+            <section className="h-[50vh] md:h-[75vh] px-4 grid place-items-center">
                 <div className="flex flex-col items-center justify-center gap-8">
                     <h1 className="translate-y-[-1rem] animate-fade-in opacity-0 cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
                         <span className="text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
