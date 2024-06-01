@@ -72,7 +72,8 @@ function Proyectos() {
                                     <img
                                         src="/forevent.webp"
                                         alt="logo Forevent"
-                                        width={120}
+                                        width={140}
+                                        className="rounded-lg"
                                     />
                                 </div>
                                 <div className="flex flex-col gap-4">
@@ -98,14 +99,14 @@ function Proyectos() {
                                 data-delay="300"
                                 className="bg-[#ffffff7a] border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
-                                <div className="icons-container rounded-xl p-1 border-pink-500 border-2 shadow-sm">
+                                <div className="icons-container rounded-lg p-1 border-pink-500 border-2 shadow-sm">
                                     <span className="font-bold text-xs text-gray-500">
                                         ERP
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-4">
                                     <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
-                                        ERP Laya Gestion
+                                        ERP Laya Gestión
                                         <span className="ml-2">
                                             <TbExternalLink />
                                         </span>
@@ -141,12 +142,19 @@ function Proyectos() {
                     </div>
                 </div>
             </section> */}
-            <section className="h-[500px] grid place-items-center">
-                <div className="flex flex-col gap-12 items-center">
-                    <h3 className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold text-blanco">
-                        Si tenes alguna duda
-                    </h3>
-                    <ContactBtn />
+            <section className="px-4 py-12 md:py-36">
+                <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
+                    <div className="absolute bg-slate-950 h-full w-full -z-10 rounded-2xl">
+                        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+                    </div>
+                    <div className="absolute h-full w-full z-20 grid place-items-center">
+                        <div className="flex flex-col gap-12 items-center">
+                            <h3 className="text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white">
+                                Si tenes alguna duda
+                            </h3>
+                            <ContactBtn />
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

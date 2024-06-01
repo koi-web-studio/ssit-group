@@ -6,10 +6,10 @@ function ContactBtn() {
         <>
             <Link
                 to="/contacto"
-                className="bg-[#40495A] p-2 px-4 rounded-full text-white text-4xl md:text-5xl  transition hover:opacity-80 hover:translate-x-1 inline-flex"
+                className="bg-[#40495A] p-2 px-4 rounded-2xl text-white text-2xl md:text-3xl  transition hover:opacity-80 hover:scale-105 inline-flex"
             >
                 Contactanos{" "}
-                <span className="mb-1 ml-1">
+                <span className="mt-1 ml-1">
                     <TbMessageCircle2 />
                 </span>
             </Link>

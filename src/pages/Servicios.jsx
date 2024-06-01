@@ -10,7 +10,8 @@ import { FaLaptopCode } from "react-icons/fa";
 import { TbUserCode } from "react-icons/tb";
 import { CiGlobe } from "react-icons/ci";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 AOS.init({
     duration: 500,
@@ -19,6 +20,26 @@ AOS.init({
 });
 
 function Servicios() {
+    const consultoriaIt = useRef(null);
+    const desarrolloDeSoftware = useRef(null);
+    const desarrolloWeb = useRef(null);
+    const location = useLocation();
+    const handleScroll = (ref) => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    };
+    useEffect(() => {
+        const hash = location.hash;
+        if (hash === "#consultoriaIt" && consultoriaIt.current) {
+            handleScroll(consultoriaIt);
+        } else if (
+            hash === "#desarrolloDeSoftware" &&
+            desarrolloDeSoftware.current
+        ) {
+            handleScroll(desarrolloDeSoftware);
+        } else if (hash === "#desarrolloWeb" && desarrolloWeb.current) {
+            handleScroll(desarrolloWeb);
+        }
+    }, [location]);
     return (
         <>
             <Helmet>
@@ -38,10 +59,11 @@ function Servicios() {
                     </h1>
                 </div>
             </section>
-            <section className="pb-32">
+            <section className="pb-32 px-2">
                 <div>
                     <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8">
                         <div
+                            onClick={() => handleScroll(consultoriaIt)}
                             data-aos="fade-left"
                             className="bg-[#ffffff7a] border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                         >
@@ -64,6 +86,7 @@ function Servicios() {
                             </div>
                         </div>
                         <div
+                            onClick={() => handleScroll(desarrolloDeSoftware)}
                             data-aos="fade-up"
                             data-delay="200"
                             className="bg-[#ffffff7a] border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
@@ -88,6 +111,7 @@ function Servicios() {
                             </div>
                         </div>
                         <div
+                            onClick={() => handleScroll(desarrolloWeb)}
                             data-aos="fade-right"
                             data-delay="300"
                             className="bg-[#ffffff7a] border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
@@ -114,21 +138,23 @@ function Servicios() {
                 </div>
             </section>
             <section
-                className="h-[80vh] grid place-items-center"
-                id="consultoria_it"
+                className="h-screen grid place-items-center px-2 md:px-4"
+                ref={consultoriaIt}
+                id="consultoriaIt"
             >
-                <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md">
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="rounded-t-2xl mask flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
                         <Lottie
                             animationData={consultoriaITLottie}
-                            className="w-[250px] mx-auto"
+                            className="w-52 mx-auto max-w-[280px] md:max-w-80"
                         />
                     </div>
-                    <div className="md:w-3/5 flex flex-col gap-8 items-start px-8">
-                        <h2 className="text-2xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                    <div className="md:w-3/5 flex flex-col gap-8 items-start md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
                             Consultoria IT
                         </h2>
-                        <p className="text-base text-slate-700">
+                        <p className="text-sm sm:text-base text-slate-700">
                             Ofrecer servicios en tiempo real para optimizar los
                             recursos tecnológicos implementados. Como consultora
                             integradora de tecnologías informáticas, nuestro
@@ -152,18 +178,23 @@ function Servicios() {
                 </div>
             </section>
             <section
-                className="h-[80vh] grid place-items-center"
-                id="consultoria_it"
+                className="h-screen grid place-items-center px-2 md:px-4"
+                ref={desarrolloDeSoftware}
+                id="desarrolloDeSoftware"
             >
-                <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md">
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="rounded-t-2xl mask flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
-                        <Lottie animationData={softwareLottie} className="" />
+                        <Lottie
+                            animationData={softwareLottie}
+                            className="max-w-[280px] md:max-w-80"
+                        />
                     </div>
-                    <div className="md:w-3/5 flex flex-col gap-8 items-start px-8">
-                        <h2 className="text-2xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                    <div className="md:w-3/5 flex flex-col gap-8 items-start md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
                             Desarrollo de Software
                         </h2>
-                        <p className="text-base text-slate-700">
+                        <p className="text-sm sm:text-base text-slate-700">
                             Nos especializamos en proyectos de desarrollo de
                             software de alta calidad, tanto in situ como
                             remotos. Creamos soluciones en diversas plataformas,
@@ -186,18 +217,23 @@ function Servicios() {
                 </div>
             </section>
             <section
-                className="h-[80vh] grid place-items-center"
-                id="consultoria_it"
+                className="h-screen grid place-items-center px-2 md:px-4"
+                ref={desarrolloWeb}
+                id="desarrolloWeb"
             >
-                <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md">
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="rounded-t-2xl mask flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
-                        <Lottie animationData={webLottie} className="" />
+                        <Lottie
+                            animationData={webLottie}
+                            className="max-w-[280px] md:max-w-80"
+                        />
                     </div>
-                    <div className="md:w-3/5 flex flex-col gap-8 items-start px-8">
-                        <h2 className="text-2xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                    <div className="md:w-3/5 flex flex-col gap-8 items-start md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
                             Diseño y desarrollo <br /> digital integral
                         </h2>
-                        <p className="text-base text-slate-700">
+                        <p className="text-sm sm:text-base text-slate-700">
                             Ofrecemos soluciones creativas y eficientes,
                             personalizando cada proyecto para satisfacer las
                             necesidades de empresas institucionales y
@@ -222,12 +258,19 @@ function Servicios() {
                     </div>
                 </div>
             </section>
-            <section className="h-[300px] grid place-items-center">
-                <div className="flex flex-col gap-12 items-center">
-                    <h3 className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold text-blanco">
-                        Si tenes alguna duda
-                    </h3>
-                    <ContactBtn />
+            <section className="px-2 sm:px-4 py-12 md:py-36">
+                <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
+                    <div className="absolute bg-slate-950 h-full w-full -z-10 rounded-2xl">
+                        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+                    </div>
+                    <div className="absolute h-full w-full z-20 grid place-items-center">
+                        <div className="flex flex-col gap-12 items-center">
+                            <h3 className="text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white">
+                                Si tenes alguna duda
+                            </h3>
+                            <ContactBtn />
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

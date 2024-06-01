@@ -12,6 +12,7 @@ import ContactBtn from "../components/ui/ContactBtn";
 import { CiGlobe } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
 import { TbUserCode } from "react-icons/tb";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 AOS.init({
     duration: 500,
@@ -122,9 +123,49 @@ function Home() {
                     </h3>
                     <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
                         <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
-                            <MaLogo color="40495A" />
-                            <MaLogo color="40495A" />
-                            <MaLogo color="40495A" />
+                            <a
+                                href="https://www.myassistanceapp.com"
+                                className="transition hover:-translate-y-1"
+                            >
+                                <MaLogo color="40495A" />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/foreventapp"
+                                className="transition hover:-translate-y-1"
+                            >
+                                <div className="flex items-center py-1 gap-4">
+                                    <img
+                                        src="/forevent.webp"
+                                        alt="logo Forevent"
+                                        width={40}
+                                        className="rounded-lg grayscale"
+                                    />
+                                    <h4 className="font-bold text-[#40495A] text-2xl">
+                                        Foreven
+                                    </h4>
+                                </div>
+                            </a>
+                            <a
+                                href="#"
+                                className="transition hover:-translate-y-1"
+                            >
+                                <div className="flex items-center py-1 gap-4">
+                                    {/* <img
+                                    src="/forevent.webp"
+                                    alt="logo Forevent"
+                                    width={40}
+                                    className="rounded-lg grayscale"
+                                /> */}
+                                    <div className="w-[40px] h-[40px] bg-gris grid place-items-center rounded-lg">
+                                        <span className="text-white font-bold">
+                                            ERP
+                                        </span>
+                                    </div>
+                                    <h4 className="font-bold text-[#40495A] text-2xl">
+                                        ERP Laya Gestión
+                                    </h4>
+                                </div>
+                            </a>
                         </div>
                         <div className="hidden flex-col items-center gap-8 md:flex-row md:justify-center md:gap-24">
                             <MaLogo color="40495A" />
@@ -157,9 +198,14 @@ function Home() {
                                     <TbUserCode className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
-                                    <h3 className="text-xl font-semibold text-slate-700">
-                                        Consultoria IT
-                                    </h3>
+                                    <Link to="/servicios#consultoriaIt">
+                                        <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
+                                            Consultoria IT
+                                            <span className="ml-1">
+                                                <HiOutlineExternalLink />
+                                            </span>
+                                        </h3>
+                                    </Link>
                                     <p className="text-md text-gris">
                                         Servicios en tiempo real para optimizar
                                         recursos tecnológicos, logrando
@@ -178,9 +224,14 @@ function Home() {
                                     <FaLaptopCode className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
-                                    <h3 className="text-xl font-semibold text-slate-700">
-                                        Desarrollo de Software
-                                    </h3>
+                                    <Link to="/servicios#desarrolloDeSoftware">
+                                        <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
+                                            Desarrollo de Software
+                                            <span className="ml-1">
+                                                <HiOutlineExternalLink />
+                                            </span>
+                                        </h3>
+                                    </Link>
                                     <p className="text-md text-gris">
                                         Proyectos de alta calidad, in situ y
                                         remotos, utilizando herramientas de
@@ -199,9 +250,14 @@ function Home() {
                                     <CiGlobe className="text-xl" />
                                 </div>
                                 <div className="flex flex-col gap-4">
-                                    <h3 className="text-xl font-semibold text-slate-700">
-                                        Diseño y Desarrollo web
-                                    </h3>
+                                    <Link to="/servicios#desarrolloWeb">
+                                        <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
+                                            Diseño y Desarrollo web
+                                            <span className="ml-1">
+                                                <HiOutlineExternalLink />
+                                            </span>
+                                        </h3>
+                                    </Link>
                                     <p className="text-md text-gris">
                                         Soluciones personalizadas para empresas,
                                         mejorando tu imagen y alcanzando tus
@@ -220,12 +276,19 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="h-[300px] grid place-items-center">
-                <div className="flex flex-col gap-12 items-center">
-                    <h3 className="text-xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold text-blanco">
-                        Si tenes alguna duda
-                    </h3>
-                    <ContactBtn />
+            <section className="px-4 py-12 md:py-36">
+                <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
+                    <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
+                        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+                    </div>
+                    <div className="absolute h-full w-full z-20 grid place-items-center">
+                        <div className="flex flex-col gap-12 items-center">
+                            <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white text-center">
+                                Si tenes alguna duda
+                            </h3>
+                            <ContactBtn />
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
