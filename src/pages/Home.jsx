@@ -6,7 +6,6 @@ import { GiProgression } from "react-icons/gi";
 import MaLogo from "../assets/logos/MaLogo";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import ContactBtn from "../components/ui/ContactBtn";
 import { CiGlobe } from "react-icons/ci";
@@ -21,13 +20,6 @@ AOS.init({
 });
 
 function Home() {
-    useEffect(() => {
-        (async () => {
-            const LocomotiveScroll = (await import("locomotive-scroll"))
-                .default;
-            const locomotiveScroll = new LocomotiveScroll();
-        })();
-    }, []);
     return (
         <>
             <Helmet>
