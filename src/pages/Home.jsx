@@ -37,10 +37,16 @@ function Home() {
                         />
                     </div>
                     <div className="flex flex-col items-start justify-center gap-8">
-                        <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
-                            <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
+                        <div className="cursor-pointer btn rounded-full bg-white backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0 flex items-center gap-4">
+                            <span className="inline-flex justify-center items-center text-2xl font-semibold leading-5 text-blanco">
                                 SSIT
-                                <FaCode className="mx-2 text-xl" />
+                            </span>
+                            <img
+                                src="/iconoseissigma.ico"
+                                alt=""
+                                className="w-7"
+                            />
+                            <span className="inline-flex justify-center items-center text-2xl font-semibold leading-5 text-blanco">
                                 Group
                             </span>
                         </div>

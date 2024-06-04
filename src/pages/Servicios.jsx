@@ -186,17 +186,39 @@ function Servicios() {
                     </div>
                 </div>
             </section>
-            <section className="px-2 sm:px-4 py-12 md:py-36">
+            <section className="px-4 py-12 md:py-36">
                 <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
-                    <div className="absolute bg-slate-950 h-full w-full -z-10 rounded-2xl">
+                    {/* <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
                         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-                    </div>
-                    <div className="absolute h-full w-full z-20 grid place-items-center">
-                        <div className="flex flex-col gap-12 items-center">
-                            <h3 className="text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white">
-                                Si tenes alguna duda
-                            </h3>
-                            <ContactBtn />
+                    </div> */}
+                    <div className="absolute h-full w-full z-20">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <img
+                                    src="/contactanos.png"
+                                    alt=""
+                                    className="w-[200px]"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-8 items-end">
+                                <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-blanco text-center">
+                                    ¿Tenés alguna duda?
+                                </h3>
+                                <p className="text-xl">
+                                    No dudes en escribirnos
+                                </p>
+                                <Link
+                                    to="/contacto"
+                                    className="transition hover:scale-105"
+                                >
+                                    <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                        contactanos{" "}
+                                        <span className="ml-1">
+                                            <HiArrowNarrowRight className="text-lg" />
+                                        </span>
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

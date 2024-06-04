@@ -1,4 +1,5 @@
 import ContactBtn from "../components/ui/ContactBtn";
+import { HiArrowNarrowRight } from "react-icons/hi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet-async";
@@ -44,7 +45,7 @@ function Proyectos() {
                                     <img
                                         src="/ma.webp"
                                         alt="logo My Assistence"
-                                        width={70}
+                                        width={15}
                                     />
                                 </div>
                                 <div className="flex flex-col gap-4">
@@ -54,13 +55,6 @@ function Proyectos() {
                                             <TbExternalLink />
                                         </span>
                                     </h3>
-                                    <p className="text-md text-gris">
-                                        Servicios en tiempo real para optimizar
-                                        recursos tecnológicos, logrando
-                                        liderazgo en el mercado de TI con
-                                        soluciones alineadas a los objetivos
-                                        organizacionales.
-                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -74,7 +68,7 @@ function Proyectos() {
                                     <img
                                         src="/forevent.webp"
                                         alt="logo Forevent"
-                                        width={140}
+                                        width={30}
                                         className="rounded-lg"
                                     />
                                 </div>
@@ -85,13 +79,6 @@ function Proyectos() {
                                             <TbExternalLink />
                                         </span>
                                     </h3>
-                                    <p className="text-md text-gris">
-                                        Proyectos de alta calidad, in situ y
-                                        remotos, utilizando herramientas de
-                                        vanguardia, metodologías ágiles y
-                                        estándares de última generación para un
-                                        desarrollo exitoso.
-                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -113,12 +100,6 @@ function Proyectos() {
                                             <TbExternalLink />
                                         </span>
                                     </h3>
-                                    <p className="text-md text-gris">
-                                        Soluciones personalizadas para empresas,
-                                        mejorando tu imagen y alcanzando tus
-                                        objetivos con creatividad, eficiencia y
-                                        responsabilidad.
-                                    </p>
                                 </div>
                             </div>
                         </a>
@@ -126,14 +107,14 @@ function Proyectos() {
                 </div>
             </section>
             <section
-                className="h-screen grid place-items-center px-2 md:px-4"
+                className="h-[60vh] grid place-items-center px-2 md:px-4"
                 /* ref={consultoriaIt} */
                 id="consultoriaIt"
             >
                 {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
                 <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="md:w-2/5 bg-pink-500 p-2 rounded-t-2xl md:rounded-bl-2xl">
-                        <img src="/ma.webp" alt="logo My Assistence" />
+                    <div className="md:w-2/5 bg-pink-200 p-2 rounded-t-2xl md:rounded-bl-2xl">
+                        <img src="/Mokcup.png" alt="logo My Assistence" />
                     </div>
                     <div className="md:w-3/5 flex flex-col gap-4 md:gap-8 items-start p-4 md:py-6 md:px-8">
                         <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
@@ -148,7 +129,53 @@ function Proyectos() {
                     </div>
                 </div>
             </section>
-            <section className="px-2 sm:px-4 py-12 md:py-36">
+            <section
+                className="h-[60vh] grid place-items-center px-2 md:px-4"
+                /* ref={consultoriaIt} */
+                id="consultoriaIt"
+            >
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                    <div className="md:w-2/5 bg-pink-200 p-2 rounded-t-2xl md:rounded-bl-2xl">
+                        <img src="/Mokcup.png" alt="logo My Assistence" />
+                    </div>
+                    <div className="md:w-3/5 flex flex-col gap-4 md:gap-8 items-start p-4 md:py-6 md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                            Forevent
+                        </h2>
+                        <p className="text-sm sm:text-base text-slate-700">
+                            My Assistance es una herramienta tecnológica que
+                            permite simplificar los procesos de Asistencia,
+                            Presentismo y Control de Personal.
+                        </p>
+                        <ContactanosCTA />
+                    </div>
+                </div>
+            </section>
+            <section
+                className="h-[60vh] grid place-items-center px-2 md:px-4"
+                /* ref={consultoriaIt} */
+                id="consultoriaIt"
+            >
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                    <div className="md:w-2/5 bg-pink-200 p-2 rounded-t-2xl md:rounded-bl-2xl">
+                        <img src="/Mokcup.png" alt="logo My Assistence" />
+                    </div>
+                    <div className="md:w-3/5 flex flex-col gap-4 md:gap-8 items-start p-4 md:py-6 md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                            ERP Laya Gestión
+                        </h2>
+                        <p className="text-sm sm:text-base text-slate-700">
+                            My Assistance es una herramienta tecnológica que
+                            permite simplificar los procesos de Asistencia,
+                            Presentismo y Control de Personal.
+                        </p>
+                        <ContactanosCTA />
+                    </div>
+                </div>
+            </section>
+            {/* <section className="px-2 sm:px-4 py-12 md:py-36">
                 <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
                     <div className="absolute bg-slate-950 h-full w-full -z-10 rounded-2xl">
                         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
@@ -159,6 +186,43 @@ function Proyectos() {
                                 Si tenes alguna duda
                             </h3>
                             <ContactBtn />
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+            <section className="px-4 py-12 md:py-36">
+                <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
+                    {/* <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
+                        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+                    </div> */}
+                    <div className="absolute h-full w-full z-20">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <img
+                                    src="/contactanos.png"
+                                    alt=""
+                                    className="w-[200px]"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-8 items-end">
+                                <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-blanco text-center">
+                                    ¿Tenés alguna duda?
+                                </h3>
+                                <p className="text-xl">
+                                    No dudes en escribirnos
+                                </p>
+                                <Link
+                                    to="/contacto"
+                                    className="transition hover:scale-105"
+                                >
+                                    <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                        contactanos{" "}
+                                        <span className="ml-1">
+                                            <HiArrowNarrowRight className="text-lg" />
+                                        </span>
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
