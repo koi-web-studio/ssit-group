@@ -1,4 +1,4 @@
-import ContactBtn from "../components/ui/ContactBtn";
+import Contacto from "../components/common/Contacto";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet-async";
@@ -6,9 +6,6 @@ import Lottie from "lottie-react";
 import consultoriaITLottie from "../assets/lottie/animacion3.json";
 import softwareLottie from "../assets/lottie/animacion2.json";
 import webLottie from "../assets/lottie/animacion1.json";
-import { FaLaptopCode } from "react-icons/fa";
-import { TbUserCode } from "react-icons/tb";
-import { CiGlobe } from "react-icons/ci";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 import { useRef, useEffect } from "react";
@@ -60,11 +57,10 @@ function Servicios() {
                 </div>
             </section>
             <section
-                className="h-[60vh] grid place-items-center px-2 md:px-4"
+                className="p-2 md:p-4 flex flex-col gap-20 items-center justify-center"
                 ref={consultoriaIt}
                 id="consultoriaIt"
             >
-                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
                 <div className="border-2 border-[#6038C6]/50 rounded-2xl bg-white flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
                         <Lottie
@@ -98,13 +94,6 @@ function Servicios() {
                         </Link>
                     </div>
                 </div>
-            </section>
-            <section
-                className="h-[60vh] grid place-items-center px-2 md:px-4"
-                ref={desarrolloDeSoftware}
-                id="desarrolloDeSoftware"
-            >
-                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
                 <div className="border-2 border-[#6038C6]/50 rounded-2xl bg-white flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
                         <Lottie
@@ -137,13 +126,6 @@ function Servicios() {
                         </Link>
                     </div>
                 </div>
-            </section>
-            <section
-                className="h-[60vh] grid place-items-center px-2 md:px-4"
-                ref={desarrolloWeb}
-                id="desarrolloWeb"
-            >
-                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
                 <div className="border-2 border-[#6038C6]/50 rounded-2xl bg-white flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <div className="md:w-2/5">
                         <Lottie
@@ -186,43 +168,94 @@ function Servicios() {
                     </div>
                 </div>
             </section>
-            <section className="px-4 py-12 md:py-36">
-                <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
-                    {/* <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
-                        <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-                    </div> */}
-                    <div className="absolute h-full w-full z-20">
-                        <div className="flex items-center justify-center gap-8">
-                            <div>
-                                <img
-                                    src="/contactanos.png"
-                                    alt=""
-                                    className="w-[200px]"
-                                />
-                            </div>
-                            <div className="flex flex-col gap-8 items-end">
-                                <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-blanco text-center">
-                                    ¿Tenés alguna duda?
-                                </h3>
-                                <p className="text-xl">
-                                    No dudes en escribirnos
-                                </p>
-                                <Link
-                                    to="/contacto"
-                                    className="transition hover:scale-105"
-                                >
-                                    <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
-                                        contactanos{" "}
-                                        <span className="ml-1">
-                                            <HiArrowNarrowRight className="text-lg" />
-                                        </span>
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
+            {/* <section
+                className="h-[60vh] grid place-items-center px-2 md:px-4"
+                ref={desarrolloDeSoftware}
+                id="desarrolloDeSoftware"
+            >
+                
+                <div className="border-2 border-[#6038C6]/50 rounded-2xl bg-white flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                    <div className="md:w-2/5">
+                        <Lottie
+                            animationData={softwareLottie}
+                            className="max-w-[280px] md:max-w-80"
+                        />
+                    </div>
+                    <div className="md:w-3/5 flex flex-col gap-8 items-start md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                            Desarrollo de Software
+                        </h2>
+                        <p className="text-sm sm:text-base text-slate-700">
+                            Nos especializamos en proyectos de desarrollo de
+                            software de alta calidad, tanto in situ como
+                            remotos. Creamos soluciones en diversas plataformas,
+                            empleando herramientas de vanguardia, metodologías
+                            ágiles y estándares de última generación que
+                            garantizan un desarrollo exitoso.
+                        </p>
+                        <Link
+                            to="/contacto"
+                            className="transition hover:translate-x-1"
+                        >
+                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                contactanos{" "}
+                                <span className="ml-1">
+                                    <HiArrowNarrowRight className="text-lg" />
+                                </span>
+                            </button>
+                        </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            {/* <section
+                className="h-[60vh] grid place-items-center px-2 md:px-4"
+                ref={desarrolloWeb}
+                id="desarrolloWeb"
+            >
+                
+                <div className="border-2 border-[#6038C6]/50 rounded-2xl bg-white flex flex-col md:flex-row items-center gap-8 p-4 md:p-6 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                    <div className="md:w-2/5">
+                        <Lottie
+                            animationData={webLottie}
+                            className="max-w-[280px] md:max-w-80"
+                        />
+                    </div>
+                    <div className="md:w-3/5 flex flex-col gap-8 items-start md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                            Diseño y desarrollo <br /> digital integral
+                        </h2>
+                        <p className="text-sm sm:text-base text-slate-700">
+                            Ofrecemos soluciones creativas y eficientes,
+                            personalizando cada proyecto para satisfacer las
+                            necesidades de empresas institucionales y
+                            particulares. En alianza con{" "}
+                            <a
+                                href="http://"
+                                className="underline text-purple-700 transition-colors hover:text-purple-500"
+                            >
+                                Koi Digital Studio
+                            </a>
+                            , escuchamos tus necesidades y te acompañamos en el
+                            crecimiento de tu empresa, abordando cada nuevo
+                            desafío con responsabilidad para lograr los mejores
+                            resultados. Estamos aquí para ayudarte a mejorar tu
+                            imagen y alcanzar tus objetivos.
+                        </p>
+                        <Link
+                            to="/contacto"
+                            className="transition hover:translate-x-1"
+                        >
+                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                contactanos{" "}
+                                <span className="ml-1">
+                                    <HiArrowNarrowRight className="text-lg" />
+                                </span>
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+            </section> */}
+            <Contacto />
         </>
     );
 }

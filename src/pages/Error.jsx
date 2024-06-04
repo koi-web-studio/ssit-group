@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import ContactBtn from "../components/ui/ContactBtn";
+import Contacto from "../components/common/Contacto";
 
 function Error() {
     return (
@@ -30,10 +30,8 @@ function Error() {
                         Volver al inicio
                     </Link>
                 </div>
-                <div className="py-24">
-                    <ContactBtn />
-                </div>
             </section>
+            <Contacto />
         </>
     );
 }
