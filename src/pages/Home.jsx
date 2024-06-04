@@ -28,42 +28,54 @@ function Home() {
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
             <section className="h-[75vh] px-4 grid place-items-center">
-                <div className="flex flex-col items-center justify-center gap-8">
-                    <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
-                        <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
-                            SSIT
-                            <FaCode className="mx-2 text-xl" />
-                            Group
-                        </span>
+                <div className="flex flex-row-reverse gap-8">
+                    <div>
+                        <img
+                            src="/hero-img.png"
+                            alt="imagen de hero"
+                            className="max-w-md"
+                        />
                     </div>
-                    <h1 className="cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium text-center flex flex-col">
-                        <span className="text-blanco translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                            Consultoria informatica
-                        </span>{" "}
-                        <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:250ms]">
-                            y desarrollo de software
-                        </span>
-                    </h1>
-                    <div className="flex justify-center items-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:300ms]">
-                        <Link
-                            to="/contacto"
-                            className="transition hover:scale-105"
-                        >
-                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
-                                contactanos{" "}
-                                <span className="ml-1">
-                                    <HiArrowNarrowRight className="text-lg" />
-                                </span>
-                            </button>
-                        </Link>
-                        <Link
-                            to="/servicios"
-                            className="transition hover:scale-105"
-                        >
-                            <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-300 border h-10 px-4 py-2 sm:text-base">
-                                ver servicios
-                            </button>
-                        </Link>
+                    <div className="flex flex-col items-start justify-center gap-8">
+                        <div className="cursor-pointer btn rounded-full bg-white border border-gris backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0">
+                            <span className="inline-flex justify-center items-center text-xs leading-5 text-blanco">
+                                SSIT
+                                <FaCode className="mx-2 text-xl" />
+                                Group
+                            </span>
+                        </div>
+                        <h1 className="cursor-default text-4xl sm:text-6xl xl:text-7xl font-medium flex flex-col">
+                            <span className="text-blanco translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+                                Consultoria informatica
+                            </span>{" "}
+                            <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:250ms]">
+                                y desarrollo de
+                            </span>
+                            <span className="bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:250ms]">
+                                software
+                            </span>
+                        </h1>
+                        <div className="flex justify-center items-center gap-8 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:300ms]">
+                            <Link
+                                to="/servicios"
+                                className="transition hover:scale-105"
+                            >
+                                <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                    ver servicios{" "}
+                                    <span className="ml-1">
+                                        <HiArrowNarrowRight className="text-lg" />
+                                    </span>
+                                </button>
+                            </Link>
+                            <Link
+                                to="/contacto"
+                                className="transition hover:scale-105"
+                            >
+                                <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50  border border-blanco h-10 px-4 py-2 sm:text-base">
+                                    contactanos
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -130,7 +142,7 @@ function Home() {
                                         src="/forevent.webp"
                                         alt="logo Forevent"
                                         width={40}
-                                        className="rounded-lg grayscale"
+                                        className="rounded-lg"
                                     />
                                     <h4 className="font-bold text-[#40495A] text-2xl">
                                         Forevent
@@ -184,7 +196,7 @@ function Home() {
                         <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-8">
                             <div
                                 data-aos="fade-left"
-                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <TbUserCode className="text-xl" />
@@ -198,19 +210,12 @@ function Home() {
                                             </span>
                                         </h3>
                                     </Link>
-                                    <p className="text-md text-gris">
-                                        Servicios en tiempo real para optimizar
-                                        recursos tecnológicos, logrando
-                                        liderazgo en el mercado de TI con
-                                        soluciones alineadas a los objetivos
-                                        organizacionales.
-                                    </p>
                                 </div>
                             </div>
                             <div
                                 data-aos="fade-up"
                                 data-delay="200"
-                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <FaLaptopCode className="text-xl" />
@@ -224,19 +229,12 @@ function Home() {
                                             </span>
                                         </h3>
                                     </Link>
-                                    <p className="text-md text-gris">
-                                        Proyectos de alta calidad, in situ y
-                                        remotos, utilizando herramientas de
-                                        vanguardia, metodologías ágiles y
-                                        estándares de última generación para un
-                                        desarrollo exitoso.
-                                    </p>
                                 </div>
                             </div>
                             <div
                                 data-aos="fade-right"
                                 data-delay="300"
-                                className="border grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card flex flex-row space-x-4 items-start px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
                                 <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
                                     <CiGlobe className="text-xl" />
@@ -250,14 +248,21 @@ function Home() {
                                             </span>
                                         </h3>
                                     </Link>
-                                    <p className="text-md text-gris">
-                                        Soluciones personalizadas para empresas,
-                                        mejorando tu imagen y alcanzando tus
-                                        objetivos con creatividad, eficiencia y
-                                        responsabilidad.
-                                    </p>
                                 </div>
                             </div>
+                        </div>
+                        <div className="w-full pt-8 flex items-center justify-center">
+                            <Link
+                                to="/servicios"
+                                className="transition hover:scale-105"
+                            >
+                                <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-blanco transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gray-300 border h-10 px-4 py-2 sm:text-base">
+                                    ver servicios
+                                    <span className="ml-1">
+                                        <HiArrowNarrowRight className="text-lg" />
+                                    </span>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -270,15 +275,37 @@ function Home() {
             </section>
             <section className="px-4 py-12 md:py-36">
                 <div className="relative left-0 top-0 h-full w-full grid place-content-center py-36 lg:max-w-5xl lg:mx-auto">
-                    <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
+                    {/* <div className="absolute bg-secondary h-full w-full -z-10 rounded-2xl">
                         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-                    </div>
-                    <div className="absolute h-full w-full z-20 grid place-items-center">
-                        <div className="flex flex-col gap-12 items-center">
-                            <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white text-center">
-                                Si tenes alguna duda
-                            </h3>
-                            <ContactBtn />
+                    </div> */}
+                    <div className="absolute h-full w-full z-20">
+                        <div className="flex items-center justify-center gap-8">
+                            <div>
+                                <img
+                                    src="/contactanos.png"
+                                    alt=""
+                                    className="w-[200px]"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-8 items-end">
+                                <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-blanco text-center">
+                                    ¿Tenés alguna duda?
+                                </h3>
+                                <p className="text-xl">
+                                    No dudes en escribirnos
+                                </p>
+                                <Link
+                                    to="/contacto"
+                                    className="transition hover:scale-105"
+                                >
+                                    <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-white h-10 px-4 py-2 sm:text-base">
+                                        contactanos{" "}
+                                        <span className="ml-1">
+                                            <HiArrowNarrowRight className="text-lg" />
+                                        </span>
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

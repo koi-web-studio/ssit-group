@@ -26,7 +26,7 @@ function Navbar() {
                             to="/"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    ? "font-medium bg-slate-700 p-2 rounded-3xl text-white"
                                     : "hover:text-slate-800"
                             }
                         >
@@ -38,7 +38,7 @@ function Navbar() {
                             to="/servicios"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    ? "font-medium bg-slate-700 p-2 rounded-3xl text-white"
                                     : "hover:text-slate-800"
                             }
                         >
@@ -50,7 +50,7 @@ function Navbar() {
                             to="/proyectos"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    ? "font-medium bg-slate-700 p-2 rounded-3xl text-white"
                                     : "hover:text-slate-800"
                             }
                         >
@@ -62,7 +62,7 @@ function Navbar() {
                             to="/contacto"
                             className={({ isActive }) =>
                                 isActive
-                                    ? "font-medium bg-slate-500/50 p-2 rounded-3xl text-white"
+                                    ? "font-medium bg-slate-700 p-2 rounded-3xl text-white"
                                     : "transition-colors hover:text-slate-800"
                             }
                         >

@@ -6,7 +6,7 @@ function ContactBtn() {
         <>
             <Link
                 to="/contacto"
-                className="bg-[#40495A] p-2 px-4 rounded-2xl text-white text-2xl md:text-3xl  transition hover:opacity-80 hover:scale-105 inline-flex"
+                className="bg-secondary p-2 px-4 rounded-xl text-white text-2xl  transition hover:opacity-80 hover:scale-105 inline-flex"
             >
                 Contactanos{" "}
                 <span className="mt-1 ml-1">

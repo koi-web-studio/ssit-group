@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet-async";
 import { TbExternalLink } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import ContactanosCTA from "../components/ui/ContactanosCTA";
 
 AOS.init({
     duration: 500,
@@ -120,6 +122,29 @@ function Proyectos() {
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </section>
+            <section
+                className="h-screen grid place-items-center px-2 md:px-4"
+                /* ref={consultoriaIt} */
+                id="consultoriaIt"
+            >
+                {/* <div className="flex flex-col md:flex-row items-center max-w-5xl h-[400px] gap-8 mask p-4 md:p-6 rounded-md"> */}
+                <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                    <div className="md:w-2/5 bg-pink-500 p-2 rounded-t-2xl md:rounded-bl-2xl">
+                        <img src="/ma.webp" alt="logo My Assistence" />
+                    </div>
+                    <div className="md:w-3/5 flex flex-col gap-4 md:gap-8 items-start p-4 md:py-6 md:px-8">
+                        <h2 className="text-3xl md:text-5xl font-bold text-blanco md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
+                            My Assistance
+                        </h2>
+                        <p className="text-sm sm:text-base text-slate-700">
+                            My Assistance es una herramienta tecnológica que
+                            permite simplificar los procesos de Asistencia,
+                            Presentismo y Control de Personal.
+                        </p>
+                        <ContactanosCTA />
                     </div>
                 </div>
             </section>

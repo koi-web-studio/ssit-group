@@ -69,7 +69,7 @@ function Contacto() {
             </Helmet>
             <div className="p-3 py-8 md:py-6 grid place-items-center">
                 <div className="flex flex-col gap-8 lg:flex-row lg:max-w-5xl lg:mx-auto">
-                    <div className="flex flex-col justify-center items-center gap-8 sm:w-[70%] sm:mx-auto text-center py-10 card rounded-xl md:p-10 text-blanco border border-gray-500/20 selection:bg-slate-500/50 selection:text-white cursor-default lg:justify-start lg:gap-24">
+                    <div className="flex flex-col justify-center items-center gap-8 sm:w-[70%] sm:mx-auto text-center py-10 card rounded-xl md:p-10 text-blanco border border-pink-500/20 selection:bg-slate-500/50 selection:text-white cursor-default lg:justify-start lg:gap-24">
                         <div className="flex flex-col justify-center items-center gap-8">
                             <h2 className="text-6xl text-blanco">Contacto</h2>
                             <div className="flex flex-col gap-8 mx-auto py-4">
@@ -88,9 +88,11 @@ function Contacto() {
                             </div>
                         </div>
                         <div className="relative self-stretch mx-auto">
-                            <h3 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-800/80 md:bg-gradient-to-r md:from-blanco md:to-gris md:text-transparent md:bg-clip-text">
-                                SSIT
-                            </h3>
+                            <img
+                                src="/logo_ssit.png"
+                                alt="logo seis sigma it"
+                                className="w-36 md:w-auto"
+                            />
                         </div>
                     </div>
                     <div className="flex flex-col gap-8 py-6 px-4 sm:w-[70%] sm:mx-auto rounded-xl md:p-10 card border border-gray-500/20">
