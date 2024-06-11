@@ -22,7 +22,7 @@ function Home() {
     return (
         <>
             <Helmet>
-                <title>Inicio - ssit group</title>
+                <title>SSIT Group</title>
                 <link rel="canonical" href="https://ssit-group.vercel.app" />
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
@@ -86,11 +86,11 @@ function Home() {
             </section>
             <section className="px-4">
                 <div className="flex flex-col items-center pb-12 md:pb-32 gap-8 text-blanco">
-                    <div className="lg:max-w-5xl lg:mx-auto xl:w-[1000px] flex items-center justify-center flex-wrap gap-8 info-container">
+                    <div className="lg:max-w-6xl lg:mx-auto xl:w-[1200px] flex items-center justify-center flex-wrap gap-8 info-container">
                         <div
                             data-aos="fade-up"
                             data-aos-delay="200"
-                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
                         >
                             <span>
                                 <FaConnectdevelop className="text-slate-700" />
@@ -107,7 +107,25 @@ function Home() {
                         <div
                             data-aos="fade-up"
                             data-aos-delay="300"
-                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[260px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
+                        >
+                            <span>
+                                <GiProgression className="text-slate-700" />
+                            </span>
+                            <h3 className="text-xl md:text-2xl text-slate-600 text-start mt-5 font-medium">
+                                Nuestra Visión
+                            </h3>
+                            <p className="text-start text-base sm:text-lg my-4 text-neutral-400">
+                                Consolidarnos como una de las empresas más
+                                reconocidas de Argentina en gestión empresarial
+                                y comercial, ofreciendo soluciones tecnológicas
+                                personalizadas para cada cliente.
+                            </p>
+                        </div>
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="400"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
                         >
                             <span>
                                 <GiProgression className="text-slate-700" />
@@ -136,21 +154,21 @@ function Home() {
                                 href="https://www.myassistanceapp.com"
                                 className="transition hover:-translate-y-1"
                             >
-                                <MaLogo color="40495A" />
+                                <MaLogo />
                             </a>
                             <a
-                                href="https://www.instagram.com/foreventapp"
+                                href="#"
                                 className="transition hover:-translate-y-1"
                             >
                                 <div className="flex items-center py-1 gap-4">
                                     <img
-                                        src="/forevent.webp"
-                                        alt="logo Forevent"
-                                        width={40}
-                                        className="rounded-lg"
+                                        src="/logo_ssit.png"
+                                        alt="logo ssit"
+                                        width="45"
+                                        height="45"
                                     />
-                                    <h4 className="font-bold text-[#40495A] text-2xl md:text-3xl">
-                                        Forevent
+                                    <h4 className="font-bold text-[#40495A] text-2xl md:text-3xl lg:text-3xl">
+                                        SS ERP
                                     </h4>
                                 </div>
                             </a>
@@ -159,19 +177,13 @@ function Home() {
                                 className="transition hover:-translate-y-1"
                             >
                                 <div className="flex items-center py-1 gap-4">
-                                    {/* <img
-                                    src="/forevent.webp"
-                                    alt="logo Forevent"
-                                    width={40}
-                                    className="rounded-lg grayscale"
-                                /> */}
-                                    <div className="w-[40px] h-[40px] bg-gris grid place-items-center rounded-lg">
-                                        <span className="text-white font-bold">
-                                            ERP
+                                    <div className="w-[45px] h-[45px] bg-[#0EA5E9] grid place-items-center rounded-lg">
+                                        <span className="text-white font-bold text-lg">
+                                            TRN
                                         </span>
                                     </div>
                                     <h4 className="font-bold text-[#40495A] text-2xl md:text-3xl">
-                                        ERP Laya Gestión
+                                        Turnero
                                     </h4>
                                 </div>
                             </a>
@@ -196,68 +208,68 @@ function Home() {
                         <div className="w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
                             <div
                                 data-aos="fade-left"
-                                className="grid-card flex space-x-4 items-center justify-between px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
-                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <TbUserCode className="text-xl" />
-                                </div>
-                                <div className="flex flex-col gap-4">
-                                    <Link
-                                        to="/servicios#consultoriaIt"
-                                        className="transition hover:scale-105"
-                                    >
+                                <Link
+                                    to="/servicios#consultoriaIt"
+                                    className="transition hover:scale-105 flex space-x-4 items-center justify-between"
+                                >
+                                    <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                        <TbUserCode className="text-xl" />
+                                    </div>
+                                    <div className="flex flex-col gap-4">
                                         <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
-                                            Consultoria IT
+                                            CONSULTORÍA IT
                                         </h3>
-                                    </Link>
-                                </div>
-                                <span className="ml-1">
-                                    <HiOutlineExternalLink />
-                                </span>
+                                    </div>
+                                    <span className="ml-1">
+                                        <HiOutlineExternalLink />
+                                    </span>
+                                </Link>
                             </div>
                             <div
                                 data-aos="fade-up"
                                 data-delay="200"
-                                className="grid-card flex space-x-4 items-center justify-between px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
-                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <FaLaptopCode className="text-xl" />
-                                </div>
-                                <div className="flex flex-col gap-4">
-                                    <Link
-                                        to="/servicios#desarrolloDeSoftware"
-                                        className="transition hover:scale-105"
-                                    >
+                                <Link
+                                    to="/servicios#desarrolloDeSoftware"
+                                    className="transition hover:scale-105 flex space-x-4 items-center justify-between"
+                                >
+                                    <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                        <FaLaptopCode className="text-xl" />
+                                    </div>
+                                    <div className="flex flex-col gap-4">
                                         <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
-                                            Desarrollo de <br /> Software
+                                            DESARROLLO DE <br /> SOFTWARE
                                         </h3>
-                                    </Link>
-                                </div>
-                                <span className="ml-1">
-                                    <HiOutlineExternalLink />
-                                </span>
+                                    </div>
+                                    <span className="ml-1">
+                                        <HiOutlineExternalLink />
+                                    </span>
+                                </Link>
                             </div>
                             <div
                                 data-aos="fade-right"
                                 data-delay="300"
-                                className="grid-card flex space-x-4 items-center justify-between px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
+                                className="grid-card px-4 py-8 md:p-4 rounded-2xl cursor-pointer transition-colors ease-in hover:bg-white"
                             >
-                                <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
-                                    <CiGlobe className="text-xl" />
-                                </div>
-                                <div className="flex flex-col gap-4">
-                                    <Link
-                                        to="/servicios#desarrolloWeb"
-                                        className="transition hover:scale-105"
-                                    >
+                                <Link
+                                    to="/servicios#desarrolloWeb"
+                                    className="transition hover:scale-105 flex space-x-4 items-center justify-between"
+                                >
+                                    <div className="icons-container rounded-xl p-2 border-pink-500 border-2 shadow-sm">
+                                        <CiGlobe className="text-xl" />
+                                    </div>
+                                    <div className="flex flex-col gap-4">
                                         <h3 className="text-xl font-semibold text-slate-700 inline-flex items-center">
-                                            Diseño y <br /> Desarrollo web
+                                            DISEÑO Y <br /> DESARROLLO WEB
                                         </h3>
-                                    </Link>
-                                </div>
-                                <span className="ml-1">
-                                    <HiOutlineExternalLink />
-                                </span>
+                                    </div>
+                                    <span className="ml-1">
+                                        <HiOutlineExternalLink />
+                                    </span>
+                                </Link>
                             </div>
                         </div>
                         <div className="w-full pt-8 flex items-center justify-center">

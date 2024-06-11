@@ -77,7 +77,7 @@ function Footer() {
                         <small className="text-blanco text-[0.85rem] md:text-[0.925rem]">
                             Desarrollado por{" "}
                             <a
-                                href="https://www.instagram.com/koiwebstudio/"
+                                href="https://www.instagram.com/koidigitalstudio/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-blue-500 btn underline transition-colors hover:text-blue-300"

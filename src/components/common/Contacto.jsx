@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Contacto() {
     return (
-        <section className="px-4">
+        <section className="px-4 md:bg-[#DDD0FF]/50">
             <div className="min-h-[500px] grid place-content-center lg:max-w-5xl lg:mx-auto">
                 <div className="flex flex-col items-center justify-center gap-8 py-8 md:flex-row">
                     <div>
