@@ -11,6 +11,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { TbUserCode } from "react-icons/tb";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import Contacto from "../components/common/Contacto";
+import Carrusel from "../components/Carrusel";
 
 AOS.init({
     duration: 500,
@@ -27,12 +28,12 @@ function Home() {
                 <meta name="description" content="SSIT GROUP" />
             </Helmet>
             <section className="h-[75vh] px-4 grid place-items-center">
-                <div className="flex flex-row-reverse justify-between gap-8 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
+                <div className="flex flex-row-reverse justify-between gap-8 lg:max-w-5xl lg:mx-auto xl:w-[1200px]">
                     <div className="hidden md:flex items-center justify-center">
                         <img
                             src="/hero-img.png"
                             alt="imagen de hero"
-                            className="max-w-sm"
+                            className="max-w-[395px]"
                         />
                     </div>
                     <div className="flex flex-col items-center md:items-start justify-center gap-8">
@@ -49,7 +50,7 @@ function Home() {
                                 Group
                             </span>
                         </div>
-                        <h1 className="text-center md:text-start cursor-default text-4xl md:text-[54px] leading-tight font-medium flex flex-col">
+                        <h1 className="text-center md:text-start cursor-default text-4xl md:text-[54px] xl:text-[56px] leading-tight font-medium flex flex-col">
                             <span className="text-blanco translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
                                 Consultoria informatica
                             </span>{" "}
@@ -84,7 +85,10 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="px-4">
+            <section className="py-8">
+                <Carrusel />
+            </section>
+            <section className="py-16 px-4">
                 <div className="flex flex-col items-center pb-12 md:pb-32 gap-8 text-blanco">
                     <div className="lg:max-w-6xl lg:mx-auto xl:w-[1200px] flex items-center justify-center flex-wrap gap-8 info-container">
                         <div
@@ -149,7 +153,7 @@ function Home() {
                         Nuestro Desarrollo <br /> de Sistemas
                     </h3>
                     <div className="cursor-default selection:text-white selection:bg-gris flex flex-col items-stretch gap-14">
-                        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-16 lg:gap-24">
+                        <div className="flex flex-col mx-auto items-start gap-8 md:flex-row md:justify-center md:gap-16 lg:gap-24">
                             <a
                                 href="https://www.myassistanceapp.com"
                                 className="transition hover:-translate-y-1"

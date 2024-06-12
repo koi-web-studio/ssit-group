@@ -1,72 +1,91 @@
 function Carrusel() {
     return (
-        <div className="relative xl:w-[1200px] mx-auto">
-            <div className="flex space-x-16 overflow-hidden sombras-inline">
-                <div className="flex space-x-16 animate-loop-scroll">
+        <div className="w-full max-w-[950px] mx-auto overflow-x-hidden bg-white md:rounded-xl shadow-md md:px-4">
+            <div className="relative flex overflow-x-hidden">
+                <div className="flex whitespace-nowrap items-center animate-loop-scroll w-max">
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo1.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo2.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo3.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo4.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
-                    />
-                </div>
-                <div
-                    className="flex space-x-16 animate-loop-scroll"
-                    aria-hidden="true"
-                >
-                    <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
-                        loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo5.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo6.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo1.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo2.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                     <img
-                        src="/logo-gobierno-salta-2023.svg"
-                        alt="logo gobierno de salta"
                         loading="lazy"
-                        className="max-w-none"
+                        src="/logos/logo3.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
+                    />
+                    <img
+                        loading="lazy"
+                        src="/logos/logo4.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
+                    />
+                    <img
+                        loading="lazy"
+                        src="/logos/logo5.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
+                    />
+                    <img
+                        loading="lazy"
+                        src="/logos/logo6.webp"
+                        alt=""
+                        width="150"
+                        className="inline-block"
                     />
                 </div>
             </div>

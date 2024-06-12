@@ -19,6 +19,22 @@ export default {
                         transform: "none",
                     },
                 },
+                "loop-scroll": {
+                    /* from: {
+                        transform: "translateX(-2%)",
+                    }, */
+                    to: {
+                        transform: "translate(-98%)",
+                    },
+                },
+                "loop-scroll2": {
+                    from: {
+                        transform: "translateX(100%)",
+                    },
+                    to: {
+                        transform: "translateX(0)",
+                    },
+                },
             },
             backgroundImage: {
                 contact: "url('/contact.svg')",
@@ -31,6 +47,8 @@ export default {
                 /* (variable)  --> en el componente se colocaria "className:'translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:(valor)]'" */
                 "fade-in":
                     "fade-in 1000ms var(--animation-delay, 0ms) ease forwards",
+                "loop-scroll": "loop-scroll 10s linear infinite",
+                "loop-scroll2": "loop-scroll2 10s linear infinite",
             },
         },
     },

@@ -14,14 +14,8 @@ function Navbar() {
                 data-aos="fade-down"
                 className="nav max-w-2xl py-4 sm:px-6 flex items-center justify-around"
             >
-                {/* <NavLink
-                    to="/"
-                    className="hidden sm:block font-bold text-gris text-xl transition-colors hover:text-blanco"
-                >
-                    SSIT
-                </NavLink> */}
                 <ul className="flex items-center justify-center px-0 my-0 gap-4 md:gap-12 text-slate-500">
-                    <li className="nav-item text-xl">
+                    <li className="nav-item sm:text-xl">
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
@@ -33,7 +27,7 @@ function Navbar() {
                             Inicio
                         </NavLink>
                     </li>
-                    <li className="nav-item text-xl">
+                    <li className="nav-item sm:text-xl">
                         <NavLink
                             to="/servicios"
                             className={({ isActive }) =>
@@ -45,7 +39,7 @@ function Navbar() {
                             Servicios
                         </NavLink>
                     </li>
-                    <li className="nav-item text-xl">
+                    <li className="nav-item sm:text-xl">
                         <NavLink
                             to="/proyectos"
                             className={({ isActive }) =>
@@ -57,7 +51,7 @@ function Navbar() {
                             Proyectos
                         </NavLink>
                     </li>
-                    <li className="nav-item text-xl">
+                    <li className="nav-item sm:text-xl">
                         <NavLink
                             to="/contacto"
                             className={({ isActive }) =>
