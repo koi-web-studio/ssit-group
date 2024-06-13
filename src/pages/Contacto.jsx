@@ -67,7 +67,7 @@ function Contacto() {
                     href="https://ssit-group.vercel.app/contacto"
                 />
             </Helmet>
-            <div className="p-3 py-8 md:py-6 grid place-items-center">
+            <div className="px-2 sm:px-4 py-8 md:py-6 grid place-items-center">
                 <div className="flex flex-col gap-8 lg:flex-row lg:max-w-5xl lg:mx-auto">
                     <div className="flex flex-col justify-center items-center gap-8 sm:w-[70%] sm:mx-auto text-center py-10 card rounded-xl md:p-10 text-blanco border border-pink-500/20 selection:bg-slate-500/50 selection:text-white cursor-default lg:justify-start lg:gap-24">
                         <div className="flex flex-col justify-center items-center gap-8">
@@ -95,7 +95,7 @@ function Contacto() {
                             />
                         </div>
                     </div>
-                    <div className="flex flex-col gap-8 py-6 px-4 sm:w-[70%] sm:mx-auto rounded-xl md:p-10 card border border-gray-500/20">
+                    <div className="flex flex-col gap-8 py-6 px-4 sm:w-[70%] sm:mx-auto rounded-xl md:p-10 card border border-pink-500/20">
                         <div className="flex flex-col selection:bg-slate-500/50 selection:text-white">
                             <h3 className="text-6xl text-center textto-blanco">
                                 Escribinos

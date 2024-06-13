@@ -14,7 +14,7 @@ function Navbar() {
                 data-aos="fade-down"
                 className="nav max-w-2xl py-4 sm:px-6 flex items-center justify-around"
             >
-                <ul className="flex items-center justify-center px-0 my-0 gap-4 md:gap-12 text-slate-500">
+                <ul className="flex items-center justify-center px-0 my-0 gap-4 sm:gap-8 md:gap-12 text-slate-500">
                     <li className="nav-item sm:text-xl">
                         <NavLink
                             to="/"

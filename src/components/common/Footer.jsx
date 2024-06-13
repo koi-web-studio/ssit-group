@@ -10,28 +10,15 @@ function Footer() {
                     <div className="flex flex-col items-center sm:items-start">
                         <Link
                             to="/"
-                            className="text-xl font-medium text-blanco transition-colors hover:text-blanco hover:underline hover:underline-offset-2"
+                            className="text-xl font-medium text-blanco transition-colors hover:text-blanco hover:underline hover:underline-offset-2 inline-flex gap-4"
                         >
-                            SSIT Group
+                            <img
+                                src="/iconoseissigma.ico"
+                                alt="logo ssit"
+                                className="w-7"
+                            />
+                            <h2>SSIT Group</h2>
                         </Link>
-                        <ul className="hidden sm:flex items-center justify-start gap-5 mt-3">
-                            <li className="text-lg transition hover:-translate-y-1">
-                                <Link
-                                    to="#"
-                                    className="text-blanco transition-colors hover:text-blanco"
-                                >
-                                    <FaInstagram />
-                                </Link>
-                            </li>
-                            <li className="text-lg transition hover:-translate-y-1">
-                                <Link
-                                    to="#"
-                                    className="text-blanco transition-colors hover:text-blanco"
-                                >
-                                    <MdOutlineMailOutline />
-                                </Link>
-                            </li>
-                        </ul>
                     </div>
                     <div className="flex flex-col items-center py-4 gap-4 sm:flex-row sm:items-end sm:mb-0 md:gap-12">
                         <ul className="flex flex-col items-center gap-3">
@@ -82,7 +69,7 @@ function Footer() {
                                 rel="noopener noreferrer"
                                 className="text-blue-500 btn underline transition-colors hover:text-blue-300"
                             >
-                                Koi Digital Studio
+                                Koi Studio
                             </a>{" "}
                             | © 2024
                         </small>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaConnectdevelop } from "react-icons/fa";
 import { GiProgression } from "react-icons/gi";
+import { GiStairsGoal } from "react-icons/gi";
 import MaLogo from "../assets/logos/MaLogo";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,15 +38,15 @@ function Home() {
                         />
                     </div>
                     <div className="flex flex-col items-center md:items-start justify-center gap-8">
-                        <div className="cursor-pointer btn rounded-full bg-white backdrop-filter-[12px] transition-colors px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0 flex items-center gap-4">
+                        <div className="cursor-pointer btn rounded-full bg-white backdrop-filter-[12px] transition-colors py-5 px-3 h-7 translate-y-[-1rem] animate-fade-in opacity-0 flex items-center gap-4">
+                            <img
+                                src="/iconoseissigma.ico"
+                                alt="logo ssit"
+                                className="w-7"
+                            />
                             <span className="inline-flex justify-center items-center text-2xl font-semibold leading-5 text-blanco">
                                 SSIT
                             </span>
-                            <img
-                                src="/iconoseissigma.ico"
-                                alt=""
-                                className="w-7"
-                            />
                             <span className="inline-flex justify-center items-center text-2xl font-semibold leading-5 text-blanco">
                                 Group
                             </span>
@@ -88,13 +89,13 @@ function Home() {
             <section className="py-8">
                 <Carrusel />
             </section>
-            <section className="py-16 px-4">
+            <section className="py-16 px-2 sm:px-4">
                 <div className="flex flex-col items-center pb-12 md:pb-32 gap-8 text-blanco">
-                    <div className="lg:max-w-6xl lg:mx-auto xl:w-[1200px] flex items-center justify-center flex-wrap gap-8 info-container">
+                    <div className="lg:max-w-6xl lg:mx-auto xl:w-[1200px] flex items-stretch justify-center flex-wrap gap-8 info-container">
                         <div
                             data-aos="fade-up"
                             data-aos-delay="200"
-                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-8 py-4 text-4xl text-white card border border-gray-500/20 basis-[280px] grow min-h-[450px]"
                         >
                             <span>
                                 <FaConnectdevelop className="text-slate-700" />
@@ -111,7 +112,7 @@ function Home() {
                         <div
                             data-aos="fade-up"
                             data-aos-delay="300"
-                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-8 py-4 text-4xl text-white card border border-gray-500/20 basis-[280px] grow min-h-[450px]"
                         >
                             <span>
                                 <GiProgression className="text-slate-700" />
@@ -129,25 +130,27 @@ function Home() {
                         <div
                             data-aos="fade-up"
                             data-aos-delay="400"
-                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-10 py-2 text-4xl text-white card border border-gray-500/20 basis-[270px] grow h-[380px]"
+                            className="cursor-default info rounded-2xl flex flex-col items-start justify-center px-8 py-4 text-4xl text-white card border border-gray-500/20 basis-[280px] grow min-h-[450px]"
                         >
                             <span>
-                                <GiProgression className="text-slate-700" />
+                                <GiStairsGoal className="text-slate-700" />
                             </span>
                             <h3 className="text-xl md:text-2xl text-slate-600 text-start mt-5 font-medium">
-                                Nuestra Visión
+                                Nuestro Objetivo
                             </h3>
                             <p className="text-start text-base sm:text-lg my-4 text-neutral-400">
-                                Consolidarnos como una de las empresas más
-                                reconocidas de Argentina en gestión empresarial
-                                y comercial, ofreciendo soluciones tecnológicas
-                                personalizadas para cada cliente.
+                                Toda empresa tiene una meta fija, y Seis Sigma
+                                Group no es la excepción. Nuestro objetivo es
+                                ofrecer servicios óptimos, productos de calidad
+                                y soluciones inmediatas, utilizando herramientas
+                                que representan una inversión beneficiosa para
+                                su empresa.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="px-4 md:py-12">
+            <section className="px-2 sm:px-4 md:py-12">
                 <div className="rounded-2xl mask grid place-content-center py-36 md:pb-48 lg:max-w-5xl lg:mx-auto xl:w-[1000px]">
                     <h3 className="cursor-default mb-24 text-center text-4xl bg-gradient-to-r from-blanco to-gris text-transparent bg-clip-text font-medium sm:text-5xl md:text-6xl">
                         Nuestro Desarrollo <br /> de Sistemas
@@ -171,7 +174,7 @@ function Home() {
                                         width="45"
                                         height="45"
                                     />
-                                    <h4 className="font-bold text-[#40495A] text-2xl md:text-3xl lg:text-3xl">
+                                    <h4 className="font-bold text-[#40495A] text-2xl sm:text-3xl">
                                         SS ERP
                                     </h4>
                                 </div>
@@ -186,7 +189,7 @@ function Home() {
                                             TRN
                                         </span>
                                     </div>
-                                    <h4 className="font-bold text-[#40495A] text-2xl md:text-3xl">
+                                    <h4 className="font-bold text-[#40495A] text-2xl sm:text-3xl">
                                         Turnero
                                     </h4>
                                 </div>

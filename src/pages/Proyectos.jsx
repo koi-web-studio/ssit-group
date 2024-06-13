@@ -121,7 +121,7 @@ function Proyectos() {
                 id="consultoriaIt"
             >
                 <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="md:w-2/5 bg-pink-500/50 p-2 rounded-t-2xl md:rounded-bl-2xl max-h-[275px]">
+                    <div className="md:w-2/5 bg-pink-500/50 p-2 rounded-t-2xl md:rounded-tr-none md:rounded-bl-2xl max-h-[275px]">
                         <img
                             src="/ma.webp"
                             alt="logo My Assistence"
@@ -141,7 +141,7 @@ function Proyectos() {
                     </div>
                 </div>
                 <div className="max-w-[400px] rounded-2xl bg-white flex flex-col md:flex-row items-center gap-4 md:gap-8 md:max-w-5xl lg:mx-auto xl:w-[1000px]">
-                    <div className="md:w-2/5 bg-[#0EA5E9]/50 p-2 rounded-t-2xl md:rounded-bl-2xl self-stretch grid place-items-center">
+                    <div className="md:w-2/5 min-h-52 bg-[#0EA5E9]/50 p-2 rounded-t-2xl md:rounded-tr-none md:rounded-bl-2xl self-stretch grid place-items-center">
                         {/* <img src="/Mokcup.png" alt="logo My Assistence" /> */}
                         <span className="text-9xl font-bold text-white">
                             TRN
